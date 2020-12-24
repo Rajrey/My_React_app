@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+
   }
   
   .navbar-container {
@@ -86,6 +87,7 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      overflow-x: hidden;
     }
   
     .nav-menu.active {

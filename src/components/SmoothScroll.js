@@ -24,7 +24,7 @@ const SmoothScroll = ({ children }) => {
       }
       
     } catch (error) {
-      // console.log("er")
+      console.log("er")
     }
    
     requestAnimationFrame(() => smooth());
@@ -34,12 +34,22 @@ const SmoothScroll = ({ children }) => {
 
   useLayoutEffect(() => {
     measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
+    try {
+      window.addEventListener("resize", measure);
+      return () => window.removeEventListener("resize", measure);
+    } catch (error) {
+      console.log("1")
+    }
+   
   }, []);
 
   useLayoutEffect(() => {
-    document.body.style.height = `${height}px`;
+    try {
+      document.body.style.height = `${height}px`;
+    } catch (error) {
+      console.log("2")
+    }
+   
   }, [height]);
 
   useLayoutEffect(() => {

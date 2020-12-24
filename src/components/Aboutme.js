@@ -96,11 +96,21 @@ function Aboutme(){
         <Container style={{width:"100%",padding:"0"}}>
 
           
-<Grid container style={{height:"500px"}}>
+<Grid container style={{height:"600px"}}>
 
 <Box clone order={{ xs: 3, sm: 3 ,md:2, lg:2}} style={{overflow:"hidden !important"}}>
-<Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"500px",overflow:"hidden"}} >
-<Box pt={10} pl={9} pb={10} id="contentwelcome">
+<Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"500px",overflow:"hidden !important"}} >
+
+<div className="containerline" style={{overflow:"hidden !important"}}>
+  <div className="wrapper">
+    <div className="fade"></div>
+    <div className="line-grid">
+     </div>
+  </div>
+  </div>
+
+<Box pt={10} pl={9} pb={10}>
+
 
 <Typography  variant="h4" component="h4" gutterBottom  style={{color: "#ffff"}}>
  

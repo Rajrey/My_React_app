@@ -36,7 +36,8 @@ class Canvasrobo extends React.Component {
 // document.body.appendChild( container );
 container.appendChild( renderer.domElement ); 
 window.addEventListener( 'resize', onWindowResize, false );
-    
+
+
 function onWindowResize(){
     // console.log(container)
     try {
