@@ -8,8 +8,6 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "classnames": "^2.2.6",
-    "gsap": "^3.5.1",
-    "postprocessing": "^6.18.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",

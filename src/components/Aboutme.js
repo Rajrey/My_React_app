@@ -114,7 +114,10 @@ function Aboutme(){
 
 <Typography  variant="h4" component="h4" gutterBottom  style={{color: "#ffff"}}>
  
-What I am all about?
+-What I am all about
+<p>Why do you need to know about me?</p>
+
+
       </Typography>
     </Box>
 

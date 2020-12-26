@@ -3,9 +3,9 @@ import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
 import { Container } from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
-
+// import Paper from '@material-ui/core/Paper';
 import Canvasrobo from './Canvasrobo';
-
+import { CgInfinity } from 'react-icons/cg';
 import styled, { keyframes } from "styled-components";
 
 
@@ -196,7 +196,7 @@ class Test extends React.Component {
           });
         }
         return (
-            <Container style={{width:"100%",padding:"0"}}>
+            <div style={{width:"100%",padding:"0"}}>
 
           
 <Grid container style={{height:"580px"}}>
@@ -213,11 +213,11 @@ class Test extends React.Component {
 		<div id="lineh11"></div>
 		<div id="lineh12"></div>
 	</div>
-  <Typography variant="h2" component="h2" gutterBottom  style={{color: "#ffff"}}>
+  <Typography variant="h2" component="h2"   style={{color: "#ffff"}}>
   <Box pt={15} pl={9} pb={10} id="contentwelcome">
 
 
-  <Typography  variant="h6" component="h6" gutterBottom  style={{color: "#ffff"}}>
+  <Typography  variant="h6" component="h6"  style={{color: "#ffff"}}>
  
   -HEY THERE!
       </Typography>
@@ -228,7 +228,7 @@ Thanks for stopping by!!
  
   I'm <b>Raj</b>
   
-  <Typography  variant="h5" component="h5" gutterBottom  style={{color: "#ffff"}}>
+  <Typography  variant="h5" component="h5" style={{color: "#ffff"}}>
         {/* Front Developer,UI/UX Designer & Business Analyst */}
     My Identity - <span id="message"></span><span className="cursor1"></span>
 
@@ -252,7 +252,7 @@ Thanks for stopping by!!
 </Box>
 <Box  clone order={{ xs: 3, sm: 3,md:4, lg: 4}} onClick={ovalscroll}>
 <Grid  item xs={12} sm={12} lg={6} md={6} >
-  <Box mt={15} id="scrollarrow">        
+  <Box id="scrollarrow">        
   <OvalButton />
         <ArrowContainer>
           <Chevron />
@@ -264,13 +264,44 @@ Thanks for stopping by!!
 </Grid>
 </Box>
 
+<Box  clone order={{ xs: 4, sm: 4,md:5, lg: 5}}>
+<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center'}}>
+<Typography variant="h4" gutterBottom  id="gridwelcome">
+        <span style={{borderBottom:"3px solid #7dc5ff"}}>Welcome to <CgInfinity/>
+              <b style={{fontFamily: 'Goldman'}}>RHE</b></span>
+      </Typography>
+      <p>Please make yourself at this virtual meet</p>
+      <span  style={{borderBottom:"1px solid #7dc5ff"}}>Thanks for stopping by!</span>
+</Grid>
+</Box>
+<Box pt={10} clone order={{ xs: 5, sm: 5,md:6, lg: 6}}>
+<Grid container item xs={12} sm={12} lg={6} md={6}>
+  <div id="rotatecircle">
+  <ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  {/* <li></li> */}
+</ul>
+</div>
+
+
 </Grid>
 
+</Box>
+<Box  clone order={{ xs: 7, sm: 7,md:8, lg: 8}}>
+<Grid  item xs={12} sm={12} lg={6} md={6}>
 
 
+</Grid>
 
-</Container>    
-     
+</Box>
+</Grid>
+
+</div>    
+
+   
         )
     }
 }

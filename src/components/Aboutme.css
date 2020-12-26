@@ -275,10 +275,10 @@
 }
 
 .svg-elem-8 {
-  -webkit-animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3399999999999999s both,
-                       animate-svg-fill-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s both;
-          animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3399999999999999s both,
-               animate-svg-fill-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s both;
+  -webkit-animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s both,
+                       animate-svg-fill-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s both;
+          animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s both,
+               animate-svg-fill-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s both;
 }
 
 @-webkit-keyframes animate-svg-stroke-9 {

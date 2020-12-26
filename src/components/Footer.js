@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-// import Typography from '@material-ui/core/Typography';
+import Typography from '@material-ui/core/Typography';
  import { SiFacebook, SiInstagram, SiLinkedin,SiGmail } from 'react-icons/si';
 const styles = theme => ({
   root: {
@@ -34,8 +34,14 @@ function Footer(props) {
     //   </Paper>
     // </footer>
 
-     <footer className={classes.footer}>
+     <footer className={classes.footer} id="contact">
+      
+       
      <div className="socialMedia">
+     <Typography variant="h4" component="h4" gutterBottom  style={{color: "#ffff"}}>
+ 
+<p>Get in Touch</p>  
+ </Typography>
        <ul>
          <li>
            <a
