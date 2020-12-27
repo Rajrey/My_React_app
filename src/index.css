@@ -12,6 +12,10 @@ code {
     monospace;
 } */
 
+/* html *,
+body * {
+cursor: none;
+} */
 .cursor {
   width: 40px;
   height: 40px;
@@ -29,7 +33,7 @@ code {
 }
 
 .cursor--hidden {
-  opacity: 0;
+  opacity: 1;
 }
 
 .cursor--link-hovered {
@@ -41,8 +45,3 @@ code {
   transform: translate(-50%, -50%) scale(0.9);
   background-color: #ffff;
 }
-
-/* html *,
-body * {
-cursor: none;
-} */

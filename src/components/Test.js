@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
-import { Container } from "@material-ui/core";
+// import { Container } from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 // import Paper from '@material-ui/core/Paper';
 import Canvasrobo from './Canvasrobo';
@@ -31,7 +31,8 @@ const OvalButton = styled.div`
   position: absolute;
   height: 50px;
   width: 30px;
-  bottom: 10vh;
+  // bottom: 10vh;
+  margin-top:-70px;
   left: 50vw;
   right: 0;
   background-color: transparent;
@@ -42,7 +43,6 @@ const OvalButton = styled.div`
 
   &::before {
     position: absolute;
-    top: 10px;
     left: 50%;
     content: "";
     width: 6px;
@@ -61,7 +61,8 @@ const ArrowContainer = styled.div`
   width: 30px;
   left: 50vw;
   right: 0;
-  bottom: 10px;
+  margin-top:-15px;
+  // bottom: 10px;
   cursor: pointer;
 `;
 
@@ -183,7 +184,7 @@ class Test extends React.Component {
       // this.canvasRef.removeChild(this.renderer.domElement);
       window.removeEventListener( 'resize', this.onWindowResize, false );
       window.removeEventListener( 'wheel', this.onWindowResize, false );
-      console.log("test unmo")
+      // console.log("test unmo")
       // window.removeEventListener( 'resize', this.onWindowResize, false );
     }
    
@@ -196,12 +197,12 @@ class Test extends React.Component {
           });
         }
         return (
-            <div style={{width:"100%",padding:"0"}}>
+            <div style={{width:"100%",padding:"0", flexGrow: "1"}}>
 
           
-<Grid container style={{height:"580px"}}>
+<Grid container>
 
-<Box clone order={{ xs: 3, sm: 3 ,md:2, lg:2}} style={{overflow:"hidden !important"}}>
+<Box clone order={{ xs: 2, sm: 2 ,md:1, lg:1}} style={{overflow:"hidden !important"}}>
 <Grid item xs={12} sm={12} lg={7} md={7} id="grid1" style={{height:"500px",overflow:"hidden"}} >
 <div id="light" style={{overflow:"hidden !important"}}>
 <div id="lineh5"></div>
@@ -244,15 +245,15 @@ Thanks for stopping by!!
   </Grid>
 
 </Box>
-<Box clone order={{ xs: 2, sm: 2,md:3, lg: 3}}>
+<Box clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
 <Grid item xs={12} sm={12} lg={5} md={5} id="grid2" style={{height:"700px",overflow:"hidden"}}>
  <Canvasrobo/>
   </Grid>
     
 </Box>
-<Box  clone order={{ xs: 3, sm: 3,md:4, lg: 4}} onClick={ovalscroll}>
+<Box  clone order={{ xs: 2, sm: 2,md:2, lg: 2}} onClick={ovalscroll}>
 <Grid  item xs={12} sm={12} lg={6} md={6} >
-  <Box id="scrollarrow">        
+  <Box mt={-20} id="scrollarrow">        
   <OvalButton />
         <ArrowContainer>
           <Chevron />
@@ -264,39 +265,65 @@ Thanks for stopping by!!
 </Grid>
 </Box>
 
-<Box  clone order={{ xs: 4, sm: 4,md:5, lg: 5}}>
+<Box  clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
 <Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center'}}>
 <Typography variant="h4" gutterBottom  id="gridwelcome">
-        <span style={{borderBottom:"3px solid #7dc5ff"}}>Welcome to <CgInfinity/>
-              <b style={{fontFamily: 'Goldman'}}>RHE</b></span>
+       <span style={{borderBottom:"3px solid #7dc5ff"}}>-Welcome to <CgInfinity/>
+              <b style={{fontFamily: 'Goldman'}}>RHE</b>-</span>
       </Typography>
+   
+      <span  style={{borderBottom:"2px solid #7dc5ff"}}>Thanks for stopping by!</span>
       <p>Please make yourself at this virtual meet</p>
-      <span  style={{borderBottom:"1px solid #7dc5ff"}}>Thanks for stopping by!</span>
 </Grid>
 </Box>
-<Box pt={10} clone order={{ xs: 5, sm: 5,md:6, lg: 6}}>
-<Grid container item xs={12} sm={12} lg={6} md={6}>
-  <div id="rotatecircle">
+<Box pt={5} clone order={{ xs: 4, sm: 4,md:4, lg: 4}}>
+<Grid style={{height:"400px"}} container  id="rotatecircle"  item xs={12} sm={12} lg={4} md={4}>
+
   <ul>
   <li></li>
   <li></li>
   <li></li>
   <li></li>
-  {/* <li></li> */}
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
-</div>
 
+ 
 
-</Grid>
-
-</Box>
-<Box  clone order={{ xs: 7, sm: 7,md:8, lg: 8}}>
-<Grid  item xs={12} sm={12} lg={6} md={6}>
 
 
 </Grid>
 
 </Box>
+<Box pt={10} pl={7} pr={7} clone order={{ xs: 5, sm: 5,md:6, lg: 6}} style={{color: "#ffff"}}>
+<Grid  item xs={12} sm={12} lg={8} md={8}>
+<Typography variant="h6" gutterBottom style={{textAlign: 'left'}}>
+        <span> <CgInfinity/><b style={{fontFamily: 'Goldman'}}>RHE </b>stands for
+        Infinite Reality Has Evolved
+              </span>
+      </Typography>
+{/* <p><CgInfinity/>RHE stands for Infinite Reality Has Evolved</p> */}
+<p>Most of the untold stories of the individuals when brought into the limelight they somehow inspire and motivate us right?</p>
+<p>As I'm not in a <mark>TED Talk</mark> to share my views about life, <mark>RHE is my virtual creation</mark> to share my thoughts!</p>
+<p>Did you ever relate yourself to a story or memes, posts and felt connected? I'm sure you did.</p>
+<p>I'm here to share about my experience and a different perspective which you can also relate, ‘as you, most probably, know’  everyone of us has one thing in common i.e <mark>Life.</mark> </p>
+Life is all about experiences and simulations in the end. I hope this information gives you some inspiration and relates it to the connected soul.
+</Grid>
+{/* <Grid  item xs={12} sm={12} lg={8} md={8} style={{textAlign: 'left'}}>
+<Typography variant="h6" gutterBottom>
+        ppppppppppppppppp
+      </Typography>
+
+
+</Grid> */}
+</Box>
+</Grid>
+<Grid container direction="row">
+<Grid  item xs={12} sm={12} lg={12} md={12}>
+{/* <Paper>item</Paper> */}
+
+</Grid>
 </Grid>
 
 </div>    

@@ -2,18 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Karla:wght@200;300;400;600;700;800&display=swap');
 html, body {
-    margin: 0;
-    /* height: 100vh; */
+
+    height: 100vh;
     background-color: #000000;
-    overflow-x: none !important;
-  
-      /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+      -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+ body{
+  margin: 0;
+  overflow-x: hidden !important;
  }
  html, body.app {
   position: relative;
-  min-height: 100vh;   
+   
+  scroll-behavior: smooth;
+  height: 100vh;   
 }
+
  #myCanvas {
     touch-action: auto !important;
     /* width: 200px;
@@ -34,6 +39,7 @@ html, body {
     font-family: 'Karla', sans-serif;
 
   }
+
   body::-webkit-scrollbar {
     width: 12px;
     background: #202020;
@@ -53,9 +59,9 @@ html, body {
 #gridwelcome{
   margin-top: 45px !important;
 }
-/* #scrollarrow{
-    margin-top: 80px;
-} */
+#scrollarrow{
+    margin-top: -350px;
+}
 #light{
   top: 70px;
 }
@@ -196,19 +202,16 @@ footer .socialMedia ul li a {
   text-align: center;
   margin-left: 25px;
 }
-/* #gap {
-	padding: 58px 0 0 0;
-} */
 
 
 
 div#rotatecircle ul{
 	height: 100%;
 	width: 100%;
-  /* display: block; */
-  /* margin-left: 45px;
-  margin-right: 50px; */
-  overflow-x: none !important;
+  display: block;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 div#rotatecircle li{
@@ -216,90 +219,100 @@ div#rotatecircle li{
 	display: block;
 	background: transparent;
 	border: 10px solid rgb(128, 204, 255);
-	border-left-color: transparent;
-	border-right-color: transparent;
-	border-radius: 500px;
-	transition: all 0.5s ease;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid rgb(133, 216, 255);
+	border-radius: 200px;
+  transition: all 0.5s ease;
+  overflow-x: hidden;
 }
 
-/* div#rotatecircle li:last-child {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	z-index: 20;
-	width: 200px;
-	height: 100px;
-	margin-left: -110px;
-	margin-top: -110px;
-	padding: 70px 0px 30px;
-	background-color: rgba(8,8,8,1.0);
-	border: 10px solid rgba(8,8,8,1.0);
-	border-radius: 200px;
-	text-shadow: 2px 2px 0px rgba(0,0,0,1);
-	box-shadow: 0px 0px 30px rgba(23,246,251, 0.5);
-	animation: pulseShadow 5s infinite linear;
-} */
-
-/* div#rotatecircle li:last-child:after{
-	content:'';
-	border: 3px dotted rgba(22,42,43,1.0);
-	border-radius: 200px;
-	width: 200px;
-	height: 200px;
-	display: block;
-	position: absolute;
-	top:-3px;
-	left:-3px;
-	background-color: transparent;
-	box-shadow: inset 0px 0px 30px rgba(0,0,0,1.0);
-} */
-
 div#rotatecircle li:first-child{
-	margin-left: 45px;
-	margin-top: 45px;
+	margin-left: 20px;
+	margin-top: 40px;
 	z-index: 2;
 	width: 240px;
 	height: 240px;
-	border-width: 20px;
+  border-width: 10px;
+  border-left: 10px solid rgb(133, 216, 255);
+  border-right: 10px solid rgb(133, 216, 255);
+  border-top: 10px solid  rgb(133, 216, 255);
+  border-bottom: 10px solid transparent;
+  position: absolute;
 	animation: spinBG 5s infinite linear;
 }
 
 div#rotatecircle li:nth-child(2){
-	margin-left: 32px;
-	margin-top: 30px;
+	margin-left: 15px;
+	margin-top: 25px;
 	z-index: 1;
 	width: 270px;
 	height: 270px;
 	border-width: 2px;
-	border-style: dotted;
+  border-style: dotted;
+  position: absolute;
 	box-shadow: 0px 0px 20px #7dc5ff;
 	animation: spinBG2 2s infinite linear;
 }
 
 div#rotatecircle li:nth-child(3){
-	margin-left: 15px;
+	margin-left: 5px;
 	margin-top: 15px;
 	z-index: 1;
 	width: 296px;
 	height: 296px;
-	border-width: 2px;
+  border-width: 2px;
+  position: absolute;
 	box-shadow: inset 0px 0px 25px rgba(0, 123, 195, 0.507);
 	animation: spinBG 12s infinite linear;
 }
 
 div#rotatecircle li:nth-child(4){
-	/* margin-left: -170px;
-	margin-top: -170px; */
 	z-index: 1;
 	width: 330px;
 	height: 330px;
 	border-width: 5px;
-	border-style: solid;
+  border-style: solid;
+  position: absolute;
 	box-shadow: inset 0px 0px 25px rgb(0 71 113);
 	animation: spinBG3 infinite linear;
 }
-
-
+div#rotatecircle li:nth-child(5){
+	margin-left: 20px;
+	margin-top: 80px;
+	z-index: 2;
+	width: 140px;
+	height: 140px;
+  border-width: 20px;
+  border: 10px solid rgb(128, 204, 255);
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+  position: absolute;
+	animation: spinBG 5s infinite linear;
+}
+div#rotatecircle li:nth-child(6){
+	margin-left: 25px;
+	margin-top: 110px;
+	z-index: 2;
+	width: 70px;
+	height: 70px;
+  border-width: 20px;
+  border: 5px solid rgb(128, 204, 255);
+  position: absolute;
+	animation: spinBG 5s infinite linear;
+}
+div#rotatecircle li:nth-child(7){
+	margin-left: 20px;
+	margin-top: 70px;
+	z-index: 2;
+	width: 170px;
+	height: 170px;
+  border-width: 20px;
+  border-style: dotted;
+  border: 1px solid rgb(128, 204, 255);
+  position: absolute;
+	animation: spinBG2 4s infinite linear;
+}
 /*-------------------------------------------
  Animations
 -------------------------------------------*/
@@ -347,3 +360,11 @@ div#rotatecircle li:nth-child(4){
 		transform: rotate(-180deg);
 	}	
 }
+
+
+mark{
+  background-color: transparent;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
