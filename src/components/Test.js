@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Canvasrobo from './Canvasrobo';
 import { CgInfinity } from 'react-icons/cg';
 import styled, { keyframes } from "styled-components";
-
+import Fade from 'react-reveal/Fade';
 
 const OvalButtonAnimation = keyframes`
 0% {
@@ -187,7 +187,6 @@ class Test extends React.Component {
       // console.log("test unmo")
       // window.removeEventListener( 'resize', this.onWindowResize, false );
     }
-   
       render() {
         function ovalscroll(e) {
           e.preventDefault();
@@ -276,10 +275,12 @@ Thanks for stopping by!!
       <p>Please make yourself at this virtual meet</p>
 </Grid>
 </Box>
+
 <Box pt={5} clone order={{ xs: 4, sm: 4,md:4, lg: 4}}>
 <Grid style={{height:"400px"}} container  id="rotatecircle"  item xs={12} sm={12} lg={4} md={4}>
-
-  <ul>
+<Fade left>
+<ul>
+  <li></li>
   <li></li>
   <li></li>
   <li></li>
@@ -288,6 +289,8 @@ Thanks for stopping by!!
   <li></li>
   <li></li>
 </ul>
+</Fade>
+
 
  
 
@@ -305,10 +308,10 @@ Thanks for stopping by!!
       </Typography>
 {/* <p><CgInfinity/>RHE stands for Infinite Reality Has Evolved</p> */}
 <p>Most of the untold stories of the individuals when brought into the limelight they somehow inspire and motivate us right?</p>
-<p>As I'm not in a <mark>TED Talk</mark> to share my views about life, <mark>RHE is my virtual creation</mark> to share my thoughts!</p>
-<p>Did you ever relate yourself to a story or memes, posts and felt connected? I'm sure you did.</p>
+<p>As I'm not in a <mark>TED Talk</mark> to share my views about life, <mark>RHE is my virtual creation</mark> to at least share my thoughts!</p>
+<p>Did you ever relate yourself to stories or memes, posts and felt connected? I'm sure you did.</p>
 <p>I'm here to share about my experience and a different perspective which you can also relate, ‘as you, most probably, know’  everyone of us has one thing in common i.e <mark>Life.</mark> </p>
-Life is all about experiences and simulations in the end. I hope this information gives you some inspiration and relates it to the connected soul.
+Life is all about experiences and simulations in the end. I hope this information gives you some inspiration and relates it to the connected soul throughout our conversation.
 </Grid>
 {/* <Grid  item xs={12} sm={12} lg={8} md={8} style={{textAlign: 'left'}}>
 <Typography variant="h6" gutterBottom>
