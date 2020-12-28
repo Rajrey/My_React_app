@@ -8,7 +8,8 @@ import Canvasrobo from './Canvasrobo';
 import { CgInfinity } from 'react-icons/cg';
 import styled, { keyframes } from "styled-components";
 import Fade from 'react-reveal/Fade';
-
+import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
 const OvalButtonAnimation = keyframes`
 0% {
   transform: translate(0, 0);
@@ -190,8 +191,15 @@ class Test extends React.Component {
       render() {
         function ovalscroll(e) {
           e.preventDefault();
-          window.scrollTo({
+          window.scrollBy({
             top: 150,
+            behavior: 'smooth'
+          });
+        }
+        function ovalscroll1(e) {
+          e.preventDefault();
+          window.scrollBy({
+            top: 100,
             behavior: 'smooth'
           });
         }
@@ -228,9 +236,9 @@ Thanks for stopping by!!
  
   I'm <b>Raj</b>
   
-  <Typography  variant="h5" component="h5" style={{color: "#ffff"}}>
+  <Typography  variant="h5" component="h5" style={{color: "#ffff",position:"absolute"}}>
         {/* Front Developer,UI/UX Designer & Business Analyst */}
-    My Identity - <span id="message"></span><span className="cursor1"></span>
+    My Identity - <span id="message" ></span><span className="cursor1"></span>
 
       </Typography>
       
@@ -284,10 +292,10 @@ Thanks for stopping by!!
   <li></li>
   <li></li>
   <li></li>
+  {/* <li></li> */}
+  {/* <li></li> */}
   <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  {/* <li></li> */}
 </ul>
 </Fade>
 
@@ -299,19 +307,27 @@ Thanks for stopping by!!
 </Grid>
 
 </Box>
-<Box pt={10} pl={7} pr={7} clone order={{ xs: 5, sm: 5,md:6, lg: 6}} style={{color: "#ffff"}}>
+<Box pt={7} pl={5} pr={5} clone order={{ xs: 5, sm: 5,md:6, lg: 6}} style={{color: "#ffff"}}>
 <Grid  item xs={12} sm={12} lg={8} md={8}>
-<Typography variant="h6" gutterBottom style={{textAlign: 'left'}}>
+  <Fade right>
+
+  
+<Typography variant="h6" style={{textAlign: 'left'}}>
         <span> <CgInfinity/><b style={{fontFamily: 'Goldman'}}>RHE </b>stands for
         Infinite Reality Has Evolved
               </span>
       </Typography>
 {/* <p><CgInfinity/>RHE stands for Infinite Reality Has Evolved</p> */}
-<p>Most of the untold stories of the individuals when brought into the limelight they somehow inspire and motivate us right?</p>
-<p>As I'm not in a <mark>TED Talk</mark> to share my views about life, <mark>RHE is my virtual creation</mark> to at least share my thoughts!</p>
-<p>Did you ever relate yourself to stories or memes, posts and felt connected? I'm sure you did.</p>
-<p>I'm here to share about my experience and a different perspective which you can also relate, ‘as you, most probably, know’  everyone of us has one thing in common i.e <mark>Life.</mark> </p>
-Life is all about experiences and simulations in the end. I hope this information gives you some inspiration and relates it to the connected soul throughout our conversation.
+<p>Most of the untold stories of people when brought into the limelight they somehow inspire and empower us, right?</p>
+<p><mark>RHE is my virtual creation</mark> to at least share my thoughts, as I'm not in a <mark>TED Talk</mark> to share my opinions about life!</p>
+<p>Have you ever connected yourself to stories or memes, posts and got attached? I'm sure you did it. </p>
+<p>I'm here to share about myself that you can relate to, ‘as you, most probably, know’ each of us has one thing in common i.e <mark>Life & Time</mark> </p>
+<mark>"Life is all about experiences and simulations in the end"</mark>
+<p>I hope that this content will add some value, gives you inspiration and relates it to the connected soul during my discourse.</p>
+<div>
+<Button variant="outlined"  color="secondary" style={{color:"#ffff",marginTop:"10px"}}><Link to='/aboutme' style={{color:"#fff",textDecoration:"none"}}>Meet the Virtual me Here</Link></Button> <span > <Button variant="outlined" onClick={ovalscroll1} color="secondary" style={{color:"#ffff",marginTop:"10px"}}>Continue Reading</Button> </span>
+  </div>
+</Fade>
 </Grid>
 {/* <Grid  item xs={12} sm={12} lg={8} md={8} style={{textAlign: 'left'}}>
 <Typography variant="h6" gutterBottom>

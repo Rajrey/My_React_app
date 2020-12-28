@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Karla:wght@200;300;400;600;700;800&display=swap');
 html, body {
 
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #000000;
       -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -57,7 +57,7 @@ html, body {
     padding-left: 10px !important;
 }
 #gridwelcome{
-  margin-top: 45px !important;
+  margin-top: 100px !important;
 }
 #scrollarrow{
     margin-top: -350px;
@@ -92,7 +92,7 @@ html, body {
 .cursor1 {
     display: inline-block;
     height: 40px;
-    width: 2px;
+    width: 1px;
     background: #aaa;
     vertical-align: middle;
     animation: 1s blink linear infinite;
@@ -220,8 +220,8 @@ div#rotatecircle li{
 	display: block;
 	background: transparent;
 	border: 10px solid rgb(128, 204, 255);
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
   border-bottom: 28.8675px solid rgb(133, 216, 255);
 	border-radius: 200px;
   transition: all 0.5s ease;
@@ -235,10 +235,11 @@ div#rotatecircle li:first-child{
 	width: 240px;
 	height: 240px;
   border-width: 10px;
+  border-style: dashed;
   border-left: 10px solid rgb(133, 216, 255);
   border-right: 10px solid rgb(133, 216, 255);
-  border-top: 10px solid  rgb(133, 216, 255);
-  border-bottom: 10px solid transparent;
+  border-top: 1px solid rgb(9, 90, 128);
+  border-bottom: 1px solid rgb(9, 90, 128);
   position: absolute;
 	animation: spinBG 5s infinite linear;
 }
@@ -278,7 +279,7 @@ div#rotatecircle li:nth-child(4){
 	box-shadow: inset 0px 0px 25px rgb(0 71 113);
 	animation: spinBG3 infinite linear;
 }
-div#rotatecircle li:nth-child(5){
+/* div#rotatecircle li:nth-child(5){
 	margin-left: 20px;
 	margin-top: 80px;
 	z-index: 2;
@@ -290,8 +291,8 @@ div#rotatecircle li:nth-child(5){
   border-left: 18px solid transparent;
   position: absolute;
 	animation: spinBG 5s infinite linear;
-}
-div#rotatecircle li:nth-child(6){
+} */
+/* div#rotatecircle li:nth-child(6){
 	margin-left: 25px;
 	margin-top: 110px;
 	z-index: 2;
@@ -301,20 +302,20 @@ div#rotatecircle li:nth-child(6){
   border: 5px solid rgb(128, 204, 255);
   position: absolute;
 	animation: spinBG 5s infinite linear;
-}
-div#rotatecircle li:nth-child(7){
+} */
+div#rotatecircle li:nth-child(5){
 	margin-left: 20px;
 	margin-top: 70px;
 	z-index: 2;
 	width: 170px;
 	height: 170px;
-  border-width: 20px;
-  border-style: dotted;
-  border: 1px solid rgb(128, 204, 255);
+  border-width: 2px;
+  border-style:double;
+  /* border: 1px solid rgb(128, 204, 255); */
   position: absolute;
 	animation: spinBG2 4s infinite linear;
 }
-div#rotatecircle li:nth-child(8){
+/* div#rotatecircle li:nth-child(8){
 	margin-left: 22px;
 	margin-top: 130px;
 	z-index: 2;
@@ -324,7 +325,7 @@ div#rotatecircle li:nth-child(8){
   border: 1px solid rgb(128, 204, 255);
   position: absolute;
 	animation: spinBG2 4s infinite linear;
-}
+} */
 /*-------------------------------------------
  Animations
 -------------------------------------------*/

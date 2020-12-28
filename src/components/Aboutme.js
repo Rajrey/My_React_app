@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
 import { Container } from "@material-ui/core";
@@ -90,9 +90,13 @@ import './Aboutme.css';
 //     },
 //     "svg.active .svg-elem-9": { strokeDashoffset: 0, fill: "rgb(255, 255, 255)" }
 //   }
+
 function Aboutme(){
-    
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
     return (
+      
         <Container style={{width:"100%",padding:"0"}}>
 
           

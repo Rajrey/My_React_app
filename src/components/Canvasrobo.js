@@ -29,7 +29,7 @@ class Canvasrobo extends React.Component {
         renderer = new THREE.WebGLRenderer({ canvas: myCanvas, antialias: true });
         
         // renderer.setSize( 400, 400 );
-        // renderer.setClearColor("#00000");
+        renderer.setClearColor(0x000000, 0);
         
         renderer.outputEncoding = THREE.sRGBEncoding;
         renderer.setSize(container.clientWidth,container.clientHeight-30,false);

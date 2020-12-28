@@ -35,6 +35,8 @@
   <body class="body">
    
     <main id="main">
+      <div class="cursor"></div>
+      <div class="cursor-border"></div>
       <div id="root"></div>
     </main>
 
@@ -52,72 +54,139 @@
     -->
     <script>
      
-const body = document.body;
-console.log(body)
-const main = document.getElementById('main');
-console.log(main)
-// We define variables we will need later.
-// 2 variables to store the scroll position and 2 variables to store the
-// container position.
-let sx = 0;
-let sy = 0;
+// const body = document.body;
+// console.log(body)
+// const main = document.getElementById('main');
+// const root = document.getElementById('root');
+// console.log(main)
+// // We define variables we will need later.
+// // 2 variables to store the scroll position and 2 variables to store the
+// // container position.
+// let sx = 0;
+// let sy = 0;
 
-let dx = sx;
-let dy = sy;
-// console.log(main.clientHeight)
-// The trick is to set a height to the body to keep the browser scroll bar.
-// body.style.height = main.clientHeight + "px";
+// let dx = sx;
+// let dy = sy;
+// // console.log(main.clientHeight)
+// // The trick is to set a height to the body to keep the browser scroll bar.
+// main.style.height = main.clientHeight + "px";
 
-// Then we fix our container so it won't move when the user scrolls.
-// We will move it ourself with the Linear Interpolation and translations.
-// main.style.position = "fixed";
-// main.style.top = 0;
-// main.style.left = 0;
+// // Then we fix our container so it won't move when the user scrolls.
+// // We will move it ourself with the Linear Interpolation and translations.
+// // main.style.position = "fixed";
+// // main.style.top = 0;
+// // main.style.left = 0;
 
-// We bind a scroll event to the window to watch scroll position.
-window.addEventListener("scroll", scroll);
+// // We bind a scroll event to the window to watch scroll position.
+// window.addEventListener("scroll", scroll);
 
-function scroll() {
-  // We only update the scroll position variables
-  sx = window.pageXOffset;
-  sy = window.pageYOffset;
-}
+// function scroll() {
+//   // We only update the scroll position variables
+//   sx = window.pageXOffset;
+//   sy = window.pageYOffset;
+// }
 
-// Then we start a `requestAnimationFrame` loop.
+// // Then we start a `requestAnimationFrame` loop.
 
-window.requestAnimationFrame(render);
+// window.requestAnimationFrame(render);
 
-function render() {
-  // We calculate our container position by using our Linear Interpolation method.
+// function render() {
+//   // We calculate our container position by using our Linear Interpolation method.
 
-  dx = lerp(dx, sx, 0.05);
-  dy = lerp(dy, sy, 0.05);
+//   dx = lerp(dx, sx, 0.03);
+//   dy = lerp(dy, sy, 0.03);
 
-  dx = Math.floor(dx * 100) / 100;
-  dy = Math.floor(dy * 100) / 100;
+//   dx = Math.round(dx * 100) / 100;
+//   dy = Math.round(dy * 100) / 100;
 
-  // Finally we translate our container to its new positions.
-  // Don't forget to add a minus sign because the container needs to move in
-  // the opposite direction of the window scroll.
-  body.style.transform = `translate(-${dx}px, -${dy}px)`;
+//   // Finally we translate our container to its new positions.
+//   // Don't forget to add a minus sign because the container needs to move in
+//   // the opposite direction of the window scroll.
+//   body.style.transform = `translate(-${dx}px, -${dy}px)`;
 
-  // And we loop again.
-  window.requestAnimationFrame(render);
-}
+//   // And we loop again.
+//   window.requestAnimationFrame(render);
+// }
 
-// This is our Linear Interpolation method.
-function lerp(a, b, n) {
-  return (1 - n) * a + n * b;
-}
-      !(function(o, c) {
-  var n = c.documentElement,
-    t = " w-mod-";
-  (n.className += t + "js"),
-    ("ontouchstart" in o ||
-      (o.DocumentTouch && c instanceof DocumentTouch)) &&
-      (n.className += t + "touch");
-})(window, document);
+// // This is our Linear Interpolation method.
+// function lerp(a, b, n) {
+//   return (1 - n) * a + n * b;
+// }
+//       !(function(o, c) {
+//   var n = c.documentElement,
+//     t = " w-mod-";
+//   (n.className += t + "js"),
+//     ("ontouchstart" in o ||
+//       (o.DocumentTouch && c instanceof DocumentTouch)) &&
+//       (n.className += t + "touch");
+// })(window, document);
       </script>
-
+<script>
+  var cursor = document.querySelector(".cursor");
+var cursorBorder = document.querySelector(".cursor-border");
+var getXY = function (event, element) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var rect = element.getBoundingClientRect();
+    x -= rect.width / 2;
+    y -= rect.height / 2;
+    return [x, y];
+};
+document.addEventListener("mouseenter", function (e) {
+    cursor.animate([{ opacity: 0 }, { opacity: 1 }], {
+        duration: 300,
+        fill: "forwards"
+    });
+    cursorBorder.animate([
+        {
+            opacity: 0
+        },
+        {
+            opacity: 0.8
+        }
+    ], {
+        duration: 300,
+        fill: "forwards"
+    });
+});
+document.addEventListener("mousemove", function (e) {
+    var _a = getXY(e, cursor), cursorX = _a[0], cursorY = _a[1];
+    var _b = getXY(e, cursorBorder), cursorBorderX = _b[0], cursorBorderY = _b[1];
+    var targetName = e.target.tagName;
+    if (targetName === "A" || targetName === "LABEL" || targetName === "BUTTON") {
+        cursorBorder.classList.add("on-focus");
+    }
+    else {
+        cursorBorder.classList.remove("on-focus");
+    }
+    cursor.animate([{ transform: "translate(" + cursorX + "px, " + cursorY + "px)" }, { transform: "translate(" + cursorX + "px, " + cursorY + "px)" }], {
+        duration: 300,
+        fill: "forwards",
+        delay: 50
+    });
+    cursorBorder.animate([{ transform: "translate(" + cursorBorderX + "px, " + cursorBorderY + "px)" }, { transform: "translate(" + cursorBorderX + "px, " + cursorBorderY + "px)" }], {
+        duration: cursorBorder.classList.contains("on-focus") ? 1500 : 300,
+        fill: "forwards",
+        delay: 150
+    });
+});
+document.addEventListener("mouseleave", function (e) {
+    cursor.animate([{ opacity: 0.8 }, { opacity: 0 }], {
+        duration: 500,
+        fill: "forwards"
+    });
+    cursorBorder.animate([
+        {
+            opacity: 0.8
+        },
+        {
+            opacity: 0
+        }
+    ], {
+        duration: 500,
+        fill: "forwards"
+    });
+});
+</script>
   </body>
 </html>
