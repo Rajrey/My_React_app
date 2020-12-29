@@ -9,13 +9,13 @@ const config = {
 
 const SmoothScroll = ({ children }) => {
   const [height, setHeight] = useState(0);
-  const app = useRef();
+  const app1 = useRef();
   const scroll = useRef();
 
   const smooth = () => {
     config.current = window.scrollY || window.pageYOffset;
     config.previous += (config.current - config.previous) * config.ease;
-    config.rounded = Math.round(config.previous * 100) / 100;
+    config.rounded = Math.floor(config.previous * 100) / 100;
     scroll.current.style.transform = `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -${
       config.rounded
     }, 0, 1)`;
@@ -39,7 +39,7 @@ const SmoothScroll = ({ children }) => {
   });
 
   return (
-    <div ref={app} className="app">
+    <div ref={app1} className="app1" style={{minHeight:"100vh"}}>
       <div ref={scroll}>{children}</div>
     </div>
   );

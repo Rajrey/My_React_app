@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
 import { Container } from "@material-ui/core";
@@ -92,17 +92,20 @@ import './Aboutme.css';
 //   }
 
 function Aboutme(){
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth"
+  // });
+  // }, [])
     return (
       
         <Container style={{width:"100%",padding:"0"}}>
 
           
-<Grid container style={{height:"600px"}}>
+<Grid container>
 
-<Box clone order={{ xs: 3, sm: 3 ,md:2, lg:2}} style={{overflow:"hidden !important"}}>
+<Box clone order={{ xs: 2, sm: 2 ,md:1, lg:1}} style={{overflow:"hidden !important"}}>
 <Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"500px",overflow:"hidden !important"}} >
 
 <div className="containerline" style={{overflow:"hidden !important"}}>
@@ -128,9 +131,9 @@ function Aboutme(){
   </Grid>
 
 </Box>
-<Box clone order={{ xs: 2, sm: 2,md:3, lg: 3}}>
+<Box clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
 <Grid item xs={12} sm={12} lg={3} md={3} id="grid3" style={{height:"500px"}}>
-<Container style={{justifyContent:"center"}}>
+{/* <Container style={{justifyContent:"center"}}> */}
 <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 140.301 267.613"
@@ -176,7 +179,7 @@ function Aboutme(){
         fill="#fff"
         className="svg-elem-9" />
     </svg>
-</Container>
+{/* </Container> */}
   </Grid>
     
 </Box>

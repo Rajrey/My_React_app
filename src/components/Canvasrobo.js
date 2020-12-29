@@ -32,7 +32,7 @@ class Canvasrobo extends React.Component {
         renderer.setClearColor(0x000000, 0);
         
         renderer.outputEncoding = THREE.sRGBEncoding;
-        renderer.setSize(container.clientWidth,container.clientHeight-30,false);
+        renderer.setSize(container.clientWidth,container.clientHeight,false);
 // document.body.appendChild( container );
 container.appendChild( renderer.domElement ); 
 window.addEventListener( 'resize', onWindowResize, false );
@@ -44,7 +44,7 @@ function onWindowResize(){
         camera.aspect = container.clientWidth/container.clientHeight;
 camera.updateProjectionMatrix();
 
-renderer.setSize(container.clientWidth,container.clientHeight-30,false);
+renderer.setSize(container.clientWidth,container.clientHeight,false);
 // document.body.appendChild( container );
 container.appendChild( renderer.domElement ); 
     } catch (error) {
@@ -69,14 +69,14 @@ container.appendChild( renderer.domElement );
             // console.log("ggggg")
             // console.log(event.wheelDelta )
             if(event.wheelDelta>0){
-                window.scrollTo({
+                window.scrollBy({
                     top: -50,
                     behavior: 'smooth'
                   });
                
             }
             else{
-                window.scrollTo({
+                window.scrollBy({
                     top: 150,
                     behavior: 'smooth'
                   });

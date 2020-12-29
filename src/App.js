@@ -4,7 +4,7 @@ import Test from './components/Test';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from "react";
-import SmoothScroll from './components/SmoothScroll';
+// import SmoothScroll from './components/SmoothScroll';
 import Footer from './components/Footer';
 import Aboutme from './components/Aboutme';
 import Work from './components/Work';
@@ -15,7 +15,7 @@ function App() {
 <Router>
 
  
- <SmoothScroll>
+ {/* <SmoothScroll> */}
 
 
  <Navbar />
@@ -26,13 +26,11 @@ function App() {
    <Route path='/work' exact component={Work} />
  </Switch>
 
-
- </SmoothScroll>
- 
+ {/* <Footer/> */}
+ {/* </SmoothScroll> */}
+ <Footer/>
     </Router>
-    <div id="gap">
-    <Footer/>
-    </div>
+    
   
     </div>
     
