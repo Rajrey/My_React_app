@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
 import { Container } from "@material-ui/core";
@@ -92,12 +92,12 @@ import './Aboutme.css';
 //   }
 
 function Aboutme(){
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth"
-  // });
-  // }, [])
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+  }, [])
     return (
       
         <Container style={{width:"100%",padding:"0"}}>
