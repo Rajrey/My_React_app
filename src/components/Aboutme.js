@@ -4,6 +4,8 @@ import Box from "@material-ui/core/Box";
 import { Container } from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 import './Aboutme.css';
+import Zoom from 'react-reveal/Zoom';
+// import Fade from 'react-reveal/Fade';
 // const converted = {
 //     "svg .svg-elem-1": {
 //       strokeDashoffset: "1343.9190673828125px",
@@ -97,7 +99,7 @@ function Aboutme(){
       top: 0,
       behavior: "smooth"
   });
-  }, [])
+  }, []);
     return (
       
         <Container style={{width:"100%",padding:"0"}}>
@@ -116,23 +118,26 @@ function Aboutme(){
   </div>
   </div>
 
-<Box pt={10} pl={9} pb={10}>
+<Box pt={10} pl={5} pr={5} pb={10} style={{color: "#ffff"}}>
 
 
-<Typography  variant="h4" component="h4" gutterBottom  style={{color: "#ffff"}}>
- 
+<Typography  variant="h5" component="h5" gutterBottom justifycontent="left">
+<Zoom right cascade>
 -What I am all about
-<p>Why do you need to know about me?</p>
 
+
+</Zoom>
 
       </Typography>
+     
+      <b><span  style={{fontFamily: 'Goldman',fontSize:"30px",borderBottom:"3px solid #7dc5ff"}}>NO BLUFF, SMART, SAVVY, BOLD</span></b>
+     
     </Box>
-
   </Grid>
 
 </Box>
 <Box clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
-<Grid item xs={12} sm={12} lg={3} md={3} id="grid3" style={{height:"500px"}}>
+<Grid item xs={12} sm={12} lg={3} md={3} id="grid3" style={{height:"500px",zIndex:"1"}}>
 {/* <Container style={{justifyContent:"center"}}> */}
 <svg
       xmlns="http://www.w3.org/2000/svg"

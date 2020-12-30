@@ -10,7 +10,7 @@ import { CgInfinity, CgMail } from 'react-icons/cg';
 
 function Footer() {
   return (
-    <div className='footer-container'>
+    <div className='footer-container' id="footerbottom">
 
 
       <section className='social-media'>

@@ -1,6 +1,6 @@
 .navbar {
     background: #000000;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,15 +8,14 @@
     position: sticky;
     top: 0;
     z-index: 999;
-
+    opacity: 1;
   }
   
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
   }
-  
   .container {
     z-index: 1;
     width: 100%;
@@ -42,6 +41,8 @@
   }
   
   .nav-menu {
+    grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,9 +82,9 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       position: absolute;
-      top: 80px;
+      top: 70px;
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;

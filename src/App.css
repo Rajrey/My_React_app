@@ -16,6 +16,7 @@
  html, body {
   position: relative;
   background-color: #000000;
+  -webkit-font-smoothing: antialiased;
   /* scroll-behavior: smooth; */
   height: 100vh;   
 }

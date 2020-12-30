@@ -8,6 +8,7 @@ import Canvasrobo from './Canvasrobo';
 import { CgInfinity } from 'react-icons/cg';
 import styled, { keyframes } from "styled-components";
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import Button from '@material-ui/core/Button';
 import { Link } from "react-router-dom";
 const OvalButtonAnimation = keyframes`
@@ -128,10 +129,13 @@ class Test extends React.Component {
 
       
     componentDidMount() {
-     
-    
+      //   window.scrollTo({
+      //     top: 0,
+      //     behavior: "smooth"
+      // });    
         const mHTML = document.getElementById('message'),
         messages = [
+          'Senior Software Developer',
           'FrontEnd Developer, UI/UX Designer',
           'Full Stack, Web Developer',
           'Business/Operations Analyst',
@@ -192,7 +196,7 @@ class Test extends React.Component {
         function ovalscroll(e) {
           e.preventDefault();
           window.scrollBy({
-            top: 150,
+            top: 250,
             behavior: 'smooth'
           });
         }
@@ -226,8 +230,9 @@ class Test extends React.Component {
 
 
   <Typography  variant="h6" component="h6"  style={{color: "#ffff"}}>
- 
+  <Zoom right cascade>
   -HEY THERE!
+  </Zoom>
       </Typography>
       {/* <Typography  variant="h6" component="h6" gutterBottom  style={{color: "#ffff"}}>
  
@@ -324,7 +329,7 @@ Thanks for stopping by!!
 <p>Most of the untold stories of people when brought into the limelight they somehow inspire and empower us, right?</p>
 <p><mark>RHE is my virtual creation</mark> to at least share my thoughts, as I've never been in a <mark>TED Talk</mark> to share my opinions about life!&nbsp;So, let's just get started with the opening question below.</p>
 <p>Have you ever hooked up with stories or memes, posts and got attached? I'm pretty sure you did it. </p>
-<p>And you know, each of us have one thing in common i.e <mark>Life & Time.</mark>&nbsp; "<mark>Life is all about experiences and memories in the end </mark>"  .&nbsp;So, I'm here to share about few insights and experiences that you can relate to </p>
+<p>And you know, each of us have one thing in common i.e <mark>Life & Time.</mark>&nbsp; "<mark>Life is all about experiences and memories in the end </mark>"  .&nbsp;So, I'm here to share about few insights and experiences that you can relate to. </p>
 {/* <mark>"Life is all about experiences and simulations in the end"</mark> */}
 <p>I hope that this content will add some value, gives you inspiration and relates it to the connected soul during my discourse.</p>
 <div>
@@ -345,7 +350,7 @@ Thanks for stopping by!!
 </Box>
 </Grid>
 <Grid container>
-  <Box pt={18} pl={5} pr={5} >
+  <Box pt={10} pl={5} pr={5} >
   <Grid id="philosophy" item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center'}}>
     <Fade top>
     <Typography variant="h4" gutterBottom justifycontent="center">
@@ -518,7 +523,7 @@ Thanks for stopping by!!
   </Grid>
     
 </Box>
-<Box pt={15} pl={5} pr={5} clone order={{ xs: 2, sm: 2,md:1, lg: 1}} style={{color: "#ffff"}}>
+<Box pt={11} pl={5} pr={5} clone order={{ xs: 2, sm: 2,md:1, lg: 1}} style={{color: "#ffff"}}>
 <Grid item xs={12} sm={12} lg={6} md={6} id="illusions">
 <Fade left>
 <Typography variant="h5" gutterBottom justifycontent="center">
@@ -538,7 +543,7 @@ And often called civilized people have increasingly become insane, driven & self
   </Grid>
     
 </Box>
-<Box  pt={15} clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
+<Box  pt={10} clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
 <Grid  item xs={12} sm={12} lg={12} md={12} id="illusions" style={{color: "#ffff", textAlign: 'center'}}>
 <Typography variant="h4" gutterBottom>
   <Fade bottom>
@@ -550,8 +555,8 @@ And often called civilized people have increasingly become insane, driven & self
       <span  style={{borderBottom:"2px solid #7dc5ff"}}>  Dream like you'll have a Deja Vu  </span>
 </Grid>
 </Box>
-<Box pt={10} pl={5} pr={5} clone order={{ xs: 4, sm: 4,md:5, lg: 5}} style={{color: "#ffff"}}>
-<Grid style={{height:"400px"}} item xs={12} sm={12} lg={7} md={7}>
+<Box pt={10} pl={5} pr={5} clone order={{ xs: 5, sm: 5,md:5, lg: 5}} style={{color: "#ffff"}}>
+<Grid style={{height:"400px"}} item xs={12} sm={12} lg={7} md={7} id="illusions">
 <Fade right>
 <Typography variant="h5" gutterBottom justifycontent="center">
        <span style={{borderBottom:"3px solid #7dc5ff"}}>My mission. </span>
@@ -561,10 +566,7 @@ My mission is to be part of the transition and witness the impact through a caus
 </p>
 <p>
 A place that has no barriers, no race or color. A safe environment that celebrates through experiences and aspirations.
-</p>
-<p>
-There is a need to create deeper & closer human connections.
-</p>
+There is a need to create deeper & closer human connections.</p>
 <p>
 We should be able to use technologies for the betterment of so-called "users".
 </p>
@@ -577,7 +579,7 @@ We should be able to use technologies for the betterment of so-called "users".
 </Box>
 
 
-<Box pt={5} clone order={{ xs: 5, sm: 5,md:4, lg: 4}} style={{color: "#ffff"}}>
+<Box pt={5} clone order={{ xs: 4, sm: 4,md:4, lg: 4}} style={{color: "#ffff"}}>
 <Grid item xs={12} sm={12} lg={5} md={5}>
 <Fade left>
 <div style={{height:"400px"}}>

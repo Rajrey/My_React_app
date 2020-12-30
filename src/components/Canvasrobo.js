@@ -70,14 +70,14 @@ container.appendChild( renderer.domElement );
             // console.log(event.wheelDelta )
             if(event.wheelDelta>0){
                 window.scrollBy({
-                    top: -50,
+                    top: -120,
                     behavior: 'smooth'
                   });
                
             }
             else{
                 window.scrollBy({
-                    top: 150,
+                    top: 200,
                     behavior: 'smooth'
                   });
             }
@@ -137,8 +137,8 @@ container.appendChild( renderer.domElement );
 	
 let bloomPass = new UnrealBloomPass( theResult, 1.5, 0.4, 0.85 )
 bloomPass.threshold = 0.11
-bloomPass.strength = 1.2
-bloomPass.radius = 0.75
+bloomPass.strength = 1.5
+bloomPass.radius = 0.25
 bloomPass.renderToScreen = true
 	
 composer = new EffectComposer( renderer )
