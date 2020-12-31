@@ -102,7 +102,7 @@ function Aboutme(){
   }, []);
     return (
       
-        <Container style={{width:"100%",padding:"0"}}>
+        <Container style={{width:"100%",padding:"0",height:"100%"}}>
 
           
 <Grid container>

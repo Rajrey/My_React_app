@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
 import {
   FaFacebook,
   FaInstagram,
@@ -11,18 +12,32 @@ import { CgInfinity, CgMail } from 'react-icons/cg';
 function Footer() {
   return (
     <div className='footer-container' id="footerbottom">
-
-
-      <section className='social-media'>
-        <div className='social-media-wrap'>
-          <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
+         <Grid container spacing={3} alignItems="center" justify="center" style={{textAlign:"center"}}>
+         <Link to='/' className='social-logo'>
               <CgInfinity className='navbar-icon' />
               <b style={{fontFamily: 'Goldman'}}>RHE</b>
             </Link>
-          </div>
-          {/* <small className='website-rights'>RHE © 2020</small> */}
-          <div className='social-icons'>
+         </Grid>
+
+     <Grid container spacing={3} alignItems="center" justify="center" style={{textAlign:"center",marginTop:"10px"}}>
+        <Grid item xs={12} sm={12} lg={4} md={4}>
+        <Link to='/' style={{color:"#fff"}}>
+              Home
+            </Link>
+        </Grid>
+        <Grid item xs={12} sm={12} lg={4} md={4}>
+        <Link to='/aboutme' style={{color:"#fff"}}>
+              Virtual/About me
+            </Link>
+        </Grid>
+        <Grid item xs={12} sm={12} lg={4} md={4}>
+        <Link to='work' style={{color:"#fff"}}>
+              Work
+            </Link>
+        </Grid>
+        </Grid>
+        <Grid container spacing={2} alignItems="center" justify="center" style={{textAlign:"center",marginTop:"30px"}}>
+        <div className='social-icons'>
             <Link
               className='social-icon-link'
               to='/'
@@ -66,8 +81,12 @@ function Footer() {
               <FaLinkedin />
             </Link>
           </div>
+          </Grid>
+      {/* <section className='social-media'>
+        <div className='social-media-wrap'>
+
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
