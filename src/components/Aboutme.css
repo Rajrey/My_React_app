@@ -339,6 +339,18 @@
   transform: perspective(100px) rotatex(45deg) scale(2);
   position: relative;
 }
+@media screen and (max-width: 960px) {
+
+  .wrapper {
+    height: 900px;
+    perspective: 1000px;
+    transform: perspective(130px) rotatex(30deg) scale(2);
+  }
+  .wrapper .fade {
+    height: 700px;
+  }
+}
+
 .wrapper .fade {
   position: absolute;
   top: -50px;

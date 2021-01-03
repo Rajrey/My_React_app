@@ -193,29 +193,29 @@ class Test extends React.Component {
       // window.removeEventListener( 'resize', this.onWindowResize, false );
     }
       render() {
-        function ovalscroll(e) {
-          e.preventDefault();
+        function ovalscroll() {
+          // e.preventDefault();
           window.scrollBy({
-            top: 250,
+            top: 450,
             behavior: 'smooth'
           });
         }
-        function ovalscroll1(e) {
-          e.preventDefault();
+        function ovalscroll1() {
+          // e.preventDefault();
           window.scrollBy({
             top: 100,
             behavior: 'smooth'
           });
         }
         return (
-          <Container style={{width:"100%",padding:"0"}}>
+          <Container style={{width:"100%",padding:"0",height:"100%"}}>
 
           
-<Grid container>
+<Grid container style={{maxWidth:"100%",margin:"0"}}>
 
-<Box clone order={{ xs: 2, sm: 2 ,md:1, lg:1}} style={{overflow:"hidden !important"}}>
-<Grid item xs={12} sm={12} lg={7} md={7} id="grid1" style={{height:"400px",overflow:"hidden"}} >
-<div id="light" style={{overflow:"hidden !important"}}>
+<Box clone order={{ xs: 2, sm: 2 ,md:1, lg:1}}>
+<Grid item xs={12} sm={12} lg={7} md={7} id="grid1" style={{height:"400px"}} >
+<div id="light">
 <div id="lineh5"></div>
 		<div id="lineh6"></div>
 		<div id="lineh7"></div>
@@ -258,16 +258,16 @@ Thanks for stopping by!!
 
 </Box>
 <Box clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
-<Grid item xs={12} sm={12} lg={5} md={5} id="grid2" style={{height:"700px",overflow:"hidden"}}>
+<Grid item xs={12} sm={12} lg={5} md={5} id="grid2" style={{height:"700px"}}>
  <Canvasrobo/>
   </Grid>
     
 </Box>
-<Box  clone order={{ xs: 2, sm: 2,md:2, lg: 2}} onClick={ovalscroll}>
-<Grid  item xs={12} sm={12} lg={6} md={6} >
+<Box  clone order={{ xs: 2, sm: 2,md:2, lg: 2}}>
+<Grid  item xs={12} sm={12} lg={6} md={6}>
   <Box mt={-20} id="scrollarrow">        
-  <OvalButton />
-        <ArrowContainer>
+  <OvalButton onClick={ovalscroll}style={{WebkitTapHighlightColor: "transparent"}}/>
+        <ArrowContainer onClick={ovalscroll} style={{WebkitTapHighlightColor: "transparent"}}>
           <Chevron />
           <Chevron />
           <Chevron />
@@ -278,9 +278,9 @@ Thanks for stopping by!!
 </Box>
 
 <Box  clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
-<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center'}}>
-<Typography variant="h4" gutterBottom  id="gridwelcome">
-  <Fade bottom>
+<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
+<Typography variant="h4" gutterBottom id="gridwelcome">
+  <Fade bottom style={{overflowX:"hidden !important"}}>
   <span style={{borderBottom:"3px solid #7dc5ff"}}>- Welcome to <CgInfinity/>
               <b style={{fontFamily: 'Goldman'}}>RHE</b> -</span>
   </Fade>
@@ -293,8 +293,8 @@ Thanks for stopping by!!
 </Box>
 
 <Box pt={5} clone order={{ xs: 4, sm: 4,md:4, lg: 4}}>
-<Grid style={{height:"400px"}} container  id="rotatecircle"  item xs={12} sm={12} lg={4} md={4}>
-<Fade left>
+<Grid style={{height:"400px",overflowX:"hidden !important"}} container  id="rotatecircle"  item xs={12} sm={12} lg={4} md={4}>
+<Fade left style={{overflowX:"hidden !important"}}>
 <ul>
   <li></li>
   <li></li>
@@ -316,8 +316,8 @@ Thanks for stopping by!!
 
 </Box>
 <Box pt={9} pl={5} pr={5} clone order={{ xs: 5, sm: 5,md:6, lg: 6}} style={{color: "#ffff"}}>
-<Grid  item xs={12} sm={12} lg={8} md={8}>
-  <Fade right>
+<Grid  item xs={12} sm={12} lg={8} md={8} style={{overflowX:"hidden !important"}}>
+  <Fade right style={{overflowX:"hidden !important"}}>
 
   
 <Typography variant="h6" style={{textAlign: 'left'}}>
@@ -349,11 +349,11 @@ Thanks for stopping by!!
 </Grid> */}
 </Box>
 </Grid>
-<Grid container>
+<Grid container style={{maxWidth:"100%",margin:"0"}}>
   <Box pt={10} pl={5} pr={5} >
-  <Grid id="philosophy" item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center'}}>
-    <Fade top>
-    <Typography variant="h4" gutterBottom justifycontent="center">
+  <Grid id="philosophy" item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
+    <Fade top style={{overflowX:"hidden !important"}}>
+    <Typography variant="h4" justifycontent="center">
        <span style={{borderBottom:"3px solid #7dc5ff"}}>- My Philosophy -</span>
       </Typography>
    <div style={{marginTop:"25px"}}>
@@ -368,8 +368,8 @@ Thanks for stopping by!!
 </Grid>
   </Box>
   <Box pt={5} clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
-<Grid style={{height:"400px"}} item xs={12} sm={12} lg={6} md={6}>
-  <Fade right>
+<Grid style={{height:"400px",overflowX:"hidden !important"}} item xs={12} sm={12} lg={6} md={6}>
+  <Fade right style={{overflowX:"hidden !important"}}>
     <div style={{height:"400px"}}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -524,9 +524,9 @@ Thanks for stopping by!!
     
 </Box>
 <Box pt={11} pl={5} pr={5} clone order={{ xs: 2, sm: 2,md:1, lg: 1}} style={{color: "#ffff"}}>
-<Grid item xs={12} sm={12} lg={6} md={6} id="illusions">
-<Fade left>
-<Typography variant="h5" gutterBottom justifycontent="center">
+<Grid item xs={12} sm={12} lg={6} md={6} id="illusions" style={{overflowX:"hidden !important"}}>
+<Fade left style={{overflowX:"hidden !important"}}>
+<Typography variant="h5" justifycontent="center">
        <span style={{borderBottom:"3px solid #7dc5ff"}}>We exist in a world of illusions. </span>
       </Typography>
 <p>
@@ -544,9 +544,9 @@ And often called civilized people have increasingly become insane, driven & self
     
 </Box>
 <Box  pt={10} clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
-<Grid  item xs={12} sm={12} lg={12} md={12} id="illusions" style={{color: "#ffff", textAlign: 'center'}}>
-<Typography variant="h4" gutterBottom>
-  <Fade bottom>
+<Grid  item xs={12} sm={12} lg={12} md={12} id="illusions" style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
+<Typography variant="h4">
+  <Fade bottom style={{overflowX:"hidden !important"}}>
   <span style={{borderBottom:"3px solid #7dc5ff"}}>- I DREAM -</span>
   </Fade>
    
@@ -556,9 +556,9 @@ And often called civilized people have increasingly become insane, driven & self
 </Grid>
 </Box>
 <Box pt={10} pl={5} pr={5} clone order={{ xs: 5, sm: 5,md:5, lg: 5}} style={{color: "#ffff"}}>
-<Grid style={{height:"400px"}} item xs={12} sm={12} lg={7} md={7} id="illusions">
-<Fade right>
-<Typography variant="h5" gutterBottom justifycontent="center">
+<Grid style={{height:"400px",overflowX:"hidden !important"}} item xs={12} sm={12} lg={7} md={7} id="illusions">
+<Fade right style={{overflowX:"hidden !important"}}>
+<Typography variant="h5" justifycontent="center">
        <span style={{borderBottom:"3px solid #7dc5ff"}}>My mission. </span>
       </Typography>
 <p>
@@ -580,7 +580,7 @@ We should be able to use technologies for the betterment of so-called "users".
 
 
 <Box pt={5} clone order={{ xs: 4, sm: 4,md:4, lg: 4}} style={{color: "#ffff"}}>
-<Grid item xs={12} sm={12} lg={5} md={5}>
+<Grid item xs={12} sm={12} lg={5} md={5} style={{overflowX:"hidden !important"}}>
 <Fade left>
 <div style={{height:"400px"}}>
 <svg

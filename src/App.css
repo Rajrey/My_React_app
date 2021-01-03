@@ -1,33 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Karla:wght@200;300;400;600;700;800&display=swap');
-/* html, body { */
-  /* scroll-behavior: smooth; */
-  /* scroll-behavior: auto; */
-    /* height: 100vh; */
-    /* background-color: #000000; */
- /* } */
- body{
-
-  overflow-x: hidden !important;
-  -webkit-font-smoothing: antialiased;
-  /* touch-action: none; */
- }
- html, body {
-  margin: 0 !important;
-  position: relative;
-  background-color: #000000;
-  -webkit-font-smoothing: antialiased;
-  /* scroll-behavior: smooth; */
-  height: 100vh;   
-}
-/* html, body.app {
-  position: relative;
-   
-  scroll-behavior: smooth;
-  height: 100vh;   
-} */
- #myCanvas {
+  #myCanvas {
     touch-action: auto !important;
     /* width: 200px;
     height: 200px; */
@@ -40,24 +12,6 @@
     cursor: grab;
     overflow: hidden !important;
  }
- * {
-    box-sizing: border-box;
-    padding: 0;
-    /* font-family: 'PT Sans', sans-serif; */
-    font-family: 'Karla', sans-serif;
-
-  }
-
-  body::-webkit-scrollbar {
-    width: 12px;
-    background: #202020;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #7dc5ff;
-    border-radius: 5px;
-    border: 3px solid #202020;
-  }
   .cursor,
 .cursor-border {
   position: fixed;
@@ -89,11 +43,14 @@
     height: 80px;
     border: 3px solid #ffffff; 
   }
+ 
   @media screen and (max-width: 960px) {
+   
     .cursor,
 .cursor-border {
 display: none;
 }
+
 #contentwelcome{
     padding-top: 0 !important;
     padding-left: 10px !important;
@@ -102,11 +59,11 @@ display: none;
   margin-top: -60px;
 }
 
-#gridwelcome{
+/* #gridwelcome{
   margin-top: 100px !important;
-}
+} */
 #scrollarrow{
-    margin-top: -350px;
+    margin-top: -550px;
 }
 #light{
   top: 70px;
@@ -256,6 +213,7 @@ footer .socialMedia ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
   /* z-index: 999;
   bottom:0px !important; */
 }
@@ -265,6 +223,7 @@ footer .socialMedia ul li a {
 .social-icon-link {
   color: #fff;
   font-size: 24px;
+  overflow-x: hidden;
 }
 
 /* .social-media {
@@ -285,6 +244,7 @@ footer .socialMedia ul li a {
   justify-content: space-between;
   align-items: center;
   width: 240px;
+  overflow-x: hidden;
 }
 
 .social-logo {
@@ -297,6 +257,7 @@ footer .socialMedia ul li a {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  overflow-x: hidden;
 }
 
 

@@ -5,94 +5,6 @@ import { Container } from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 import './Aboutme.css';
 import Zoom from 'react-reveal/Zoom';
-// import Fade from 'react-reveal/Fade';
-// const converted = {
-//     "svg .svg-elem-1": {
-//       strokeDashoffset: "1343.9190673828125px",
-//       strokeDasharray: "1343.9190673828125px",
-//       fill: "transparent",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s"
-//     },
-//     "svg.active .svg-elem-1": { strokeDashoffset: 0, fill: "rgb(255, 255, 255)" },
-//     "svg .svg-elem-2": {
-//       strokeDashoffset: "5273.576171875px",
-//       strokeDasharray: "5273.576171875px",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s"
-//     },
-//     "svg.active .svg-elem-2": { strokeDashoffset: 0 },
-//     "svg .svg-elem-3": {
-//       strokeDashoffset: "2656.538818359375px",
-//       strokeDasharray: "2656.538818359375px",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1s"
-//     },
-//     "svg.active .svg-elem-3": { strokeDashoffset: 0 },
-//     "svg .svg-elem-4": {
-//       strokeDashoffset: "274.2694091796875px",
-//       strokeDasharray: "274.2694091796875px",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.1s"
-//     },
-//     "svg.active .svg-elem-4": { strokeDashoffset: 0 },
-//     "svg .svg-elem-5": {
-//       strokeDashoffset: "365.04461669921875px",
-//       strokeDasharray: "365.04461669921875px",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2000000000000002s"
-//     },
-//     "svg.active .svg-elem-5": { strokeDashoffset: 0 },
-//     "svg .svg-elem-6": {
-//       strokeDashoffset: "2px",
-//       strokeDasharray: "2px",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3s"
-//     },
-//     "svg.active .svg-elem-6": { strokeDashoffset: 0 },
-//     "svg .svg-elem-7": {
-//       strokeDashoffset: "76.13826751708984px",
-//       strokeDasharray: "76.13826751708984px",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.4000000000000001s"
-//     },
-//     "svg.active .svg-elem-7": { strokeDashoffset: 0 },
-//     "svg .svg-elem-8": {
-//       strokeDashoffset: "46.086509704589844px",
-//       strokeDasharray: "46.086509704589844px",
-//       fill: "transparent",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5s"
-//     },
-//     "svg.active .svg-elem-8": { strokeDashoffset: 0, fill: "rgb(246, 246, 246)" },
-//     "svg .svg-elem-9": {
-//       strokeDashoffset: "116.37887573242188px",
-//       strokeDasharray: "116.37887573242188px",
-//       fill: "transparent",
-//       WebkitTransition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,\n                        fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s",
-//       transition:
-//         "stroke-dashoffset 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s,\n                fill 0.15s cubic-bezier(0.47, 0, 0.745, 0.715) 1.6s"
-//     },
-//     "svg.active .svg-elem-9": { strokeDashoffset: 0, fill: "rgb(255, 255, 255)" }
-//   }
-
 function Aboutme(){
   useEffect(() => {
     window.scrollTo({
@@ -108,7 +20,7 @@ function Aboutme(){
 <Grid container>
 
 <Box clone order={{ xs: 2, sm: 2 ,md:1, lg:1}} style={{overflow:"hidden !important"}}>
-<Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"500px",overflow:"hidden !important"}} >
+<Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"400px",overflow:"hidden !important"}} >
 
 <div className="containerline" style={{overflow:"hidden !important"}}>
   <div className="wrapper">
@@ -117,6 +29,8 @@ function Aboutme(){
      </div>
   </div>
   </div>
+
+
 
 <Box pt={10} pl={5} pr={5} pb={10} style={{color: "#ffff"}}>
 
@@ -137,7 +51,8 @@ function Aboutme(){
 
 </Box>
 <Box clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
-<Grid item xs={12} sm={12} lg={3} md={3} id="grid3" style={{height:"500px",zIndex:"1"}}>
+<Grid item xs={12} sm={12} lg={3} md={3} id="grid3" style={{height:"500px"}}>
+  
 {/* <Container style={{justifyContent:"center"}}> */}
 <svg
       xmlns="http://www.w3.org/2000/svg"

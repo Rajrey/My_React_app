@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -18,7 +17,7 @@ const theme = createMuiTheme({
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <App/>
+    <App style={{maxWidth:"100vw"}}/>
     </ThemeProvider>
   
   </React.StrictMode>,

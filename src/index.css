@@ -1,54 +1,72 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Karla:wght@200;300;400;600;700;800&display=swap');
+/* html, body { */
+  /* scroll-behavior: smooth; */
+  /* scroll-behavior: auto; */
+    /* height: 100vh; */
+    /* background-color: #000000; */
+ /* } */
+
+ body{
+
+  /* overflow-x: hidden !important; */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* touch-action: none; */
+  position: relative;
+ }
+ html, body {
+  margin: 0 !important;
+
+  background-color: #000000;
+  min-height: 100vh;   
+  min-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: visible;
+    /* scroll-behavior: smooth; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* html, body.app {
+  position: relative;
+  height: 100vh;   
 } */
 
-/* html *,
-body * {
-cursor: none;
-} */
-/* .cursor {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #ffff;
-  box-shadow: 0 0 0 5px rgb(0, 0, 0), 0 0 0 7px white;
-  border-radius: 100%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 90ms ease;
-  transition-property: background-color, opacity, transform, mix-blend-mode;
-  z-index: 9999;
-  mix-blend-mode: difference;
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Karla', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;
+    background: #202020;
+  }
   
+  body::-webkit-scrollbar-thumb {
+    background: #7dc5ff;
+    border-radius: 5px;
+    border: 3px solid #202020;
+  }
+  @media screen and (max-width: 760px) {
+    ::-webkit-scrollbar {display:none;}
+    
+  
+  }
+*:focus {
+  outline: 0;
+  -webkit-appearance: none;
+  outline: none !important;
 }
-
-.cursor--hidden {
-  opacity: 1;
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
-.cursor--link-hovered {
-  transform: translate(-50%, -50%) scale(1.80);
-  background-color: #ffff;
-}
-
-.cursor--clicked {
-  transform: translate(-50%, -50%) scale(0.9);
-  background-color: #ffff;
-} */
-
-
-
-
 
 
 

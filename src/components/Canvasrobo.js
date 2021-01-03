@@ -5,7 +5,7 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
 import {EffectComposer} from 'three/examples/jsm/postprocessing/EffectComposer';
 import {RenderPass} from 'three/examples/jsm/postprocessing/RenderPass';
 import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass';
-
+import { RoughnessMipmapper } from 'three/examples/jsm/utils/RoughnessMipmapper';
 class Canvasrobo extends React.Component {
     
     constructor(props) {
@@ -17,20 +17,41 @@ class Canvasrobo extends React.Component {
     componentDidMount() {
     
         var scene, camera, renderer,myCanvas = document.getElementById('myCanvas');
-       
+        // var antialias;
+        // var isMobile;
+        
+        // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
+        // {
+        //     isMobile = true;
+        // }
+        // else
+        // {
+        //     isMobile = false;
+        // }
+        
+        // if(isMobile)
+        // {
+        //     antialias = false;
+        // }
+        // else
+        // {
+        //     antialias = true;
+        // }
+        
         scene = new THREE.Scene();
         var container = document.getElementById( "grid2" );
        
         // scene.fillStyle = "blue";
+        // camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 10000);
         camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight);
-        
         camera.position.set(0, 0.8, 3);
         
-        renderer = new THREE.WebGLRenderer({ canvas: myCanvas, antialias: true });
-        
+        renderer = new THREE.WebGLRenderer({ canvas: myCanvas, antialias: true , preserveDrawingBuffer: true,
+            alpha:false });
+        renderer.setPixelRatio(myCanvas.devicePixelRatio);
         // renderer.setSize( 400, 400 );
         renderer.setClearColor(0x000000, 0);
-        
+        renderer.autoClear = false;
         renderer.outputEncoding = THREE.sRGBEncoding;
         renderer.setSize(container.clientWidth,container.clientHeight,false);
 // document.body.appendChild( container );
@@ -44,16 +65,17 @@ function onWindowResize(){
         camera.aspect = container.clientWidth/container.clientHeight;
 camera.updateProjectionMatrix();
 
-renderer.setSize(container.clientWidth,container.clientHeight,false);
+renderer.setSize(container.clientWidth,container.clientHeight);
 // document.body.appendChild( container );
 container.appendChild( renderer.domElement ); 
+render();
     } catch (error) {
        console.log("viewport")
     }
 
 
 }
-      
+
         // console.log(renderer)
         
         // document.body.appendChild( renderer.domElement );
@@ -65,6 +87,10 @@ container.appendChild( renderer.domElement );
             MIDDLE: THREE.MOUSE.DOLLY,
             // RIGHT: THREE.MOUSE.PAN
         }
+        // controls.touches = {
+        //     ONE: THREE.TOUCH.ROTATE,
+        //     TWO: THREE.TOUCH.DOLLY_PAN
+        // }
         myCanvas.addEventListener('wheel',function(event){
             // console.log("ggggg")
             // console.log(event.wheelDelta )
@@ -85,7 +111,10 @@ container.appendChild( renderer.domElement );
             
         }, false);
         
-        
+        controls.enableDamping = true;
+			controls.target.set( 0, 0, 0 );
+			controls.maxPolarAngle = Math.PI / 1.05;   
+			controls.screenSpacePanning = true;
         controls.update();
       
       
@@ -93,6 +122,19 @@ container.appendChild( renderer.domElement );
         light.position.setScalar(100);
     scene.add(light);
     scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+
+
+
+
+    // let light1 = new THREE.PointLight(0xffffff,1);
+    //         light1.position.set(0,300,500);
+    //         scene.add(light1);
+    
+    //         let light2 = new THREE.PointLight(0xffffff,1);
+    //         light2.position.set(500,100,0);
+    //         scene.add(light2);
+
+
     // let light1 = new THREE.PointLight(0xffffff,3);
     //         light1.position.set(0,300,500);
     //         scene.add(light1);
@@ -109,12 +151,13 @@ container.appendChild( renderer.domElement );
     //         light4.position.set(-500,300,0);
     //         scene.add(light4);
     var composer = new EffectComposer(renderer);
+    const roughnessMipmapper = new RoughnessMipmapper( renderer );
         var loader = new GLTFLoader();
         // console.log(loader.load('./myroboring2.glb'));
         loader.load('myroboring4.glb', function(gltf){
             scene.add(gltf.scene);
-            console.log("gltf.scene", gltf.scene);
-            console.log(scene.children)
+            // console.log("gltf.scene", gltf.scene);
+            // console.log(scene.children)
             // let theResult = scene.getObjectByName("Cube", true);
             let theResult = scene.getObjectByName("BezierCircle001", true);
             // let theResult1 = scene.getObjectByName("BezierCircle001", true);
@@ -162,8 +205,8 @@ composer.addPass( bloomPass )
     // composer.addPass(renderPass);
     // composer.addPass(effectPass);
     
-    
-    
+    roughnessMipmapper.dispose();
+    render();
     
         },
         // called while loading is progressing
@@ -191,6 +234,7 @@ composer.addPass( bloomPass )
             requestAnimationFrame(render);
             if (scene) {
                 setTimeout( function() {
+                    controls.update();
                     scene.rotation.y += 0.004;
                 }, 1000);
              
@@ -200,7 +244,7 @@ composer.addPass( bloomPass )
         }, 1000 / 30 );
     
     
-    renderer.autoClear = false;
+    // renderer.autoClear = false;
    
     renderer.clear();
     
@@ -215,7 +259,7 @@ composer.addPass( bloomPass )
     // }
   
     }
-    render();
+   
     // canvas.fillStyle = 'black'
       }
     //   componentDidUpdate() {
@@ -230,14 +274,15 @@ composer.addPass( bloomPass )
     //   }
       componentWillUnmount() {
         // console.log("robo")
-        // this.canvasRef.removeChild(this.renderer.domElement);
+        // this.canvasRef.removeChild(document.getElementById('myCanvas'));
+        // cancelAnimationFrame(render);
         window.removeEventListener( 'resize', this.onWindowResize, false );
         window.removeEventListener( 'wheel', this.onWindowResize, false );
         // window.removeEventListener( 'resize', this.onWindowResize, false );
       }
       render() {
         return (
-<div>
+<div style={{overflow:"hidden"}}>
 
   <canvas id="myCanvas" ref={this.canvasRef} ></canvas>
 

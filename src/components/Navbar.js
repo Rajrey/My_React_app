@@ -22,7 +22,7 @@ function Navbar() {
     const elem1 = document.querySelector(".menu-icon");
     const elem2 = document.querySelector(".navbar-logo");
     if (
-      (window.scrollY < 10 && elem.style.height === "75px") ||
+      (window.scrollY < 10 && elem.style.height === "35px") ||
       window.scrollY - prevScrollY < -70
     ) {
       if(!click){
@@ -56,26 +56,22 @@ function scrollcontact() {
   var elmnt = document.getElementById("footerbottom");
   elmnt.scrollIntoView({behavior: "smooth"});
 }
-  useEffect(() => {
-    // showButton();
-    // window.addEventListener('resize', showButton);
-    // return function cleanupListener() {
-    //   window.removeEventListener('resize', showButton);
-    // }
-  }, []);
+  // useEffect(() => {
+ 
+  // }, []);
 
 
   return (
 
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <nav className='navbar'>
-          <div className='navbar-container container'>
+        <nav className='navbar' id="topheader">
+          <div className='navbar-container container1'>
             <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
               <CgInfinity className='navbar-icon' />
               <b style={{fontFamily: 'Goldman'}}>RHE</b>
             </NavLink>
-            <div className='menu-icon' onClick={handleClick}>
+            <div className='menu-icon' onClick={handleClick} style={{WebkitTapHighlightColor: "transparent"}}>
               {click ? <FaTimes /> : <FaGripLines />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
@@ -113,80 +109,6 @@ function scrollcontact() {
                   Contact
                 </div>
               </li>
-              {/* <li className='nav-item'>
-              <Link
-                  to='/products'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-<label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture" component="span">
-          <SiFacebook />
-          </IconButton>
-      </label>
-                </Link>
-              
-              </li> */}
-              {/* <li className='nav-item'>
-              <Link
-                  to='/products'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                    <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture" component="span">
-          <SiInstagram/>
-        </IconButton>
-      </label>
-                </Link>
-              
-              </li> */}
-              {/* <li className='nav-item'>
-              <Link
-                  to='/products'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                   <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture" component="span">
-          <SiLinkedin/>
-        </IconButton>
-      </label>  
-                </Link>
-             
-              </li> */}
-              {/* <li className='nav-item'>
-              <Link
-                  to='/products'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                    <label htmlFor="icon-button-file">
-        <IconButton color="primary" aria-label="upload picture" component="span">
-          <SiGmail/>
-        </IconButton>
-      </label> 
-                </Link>
-             
-              </li> */}
-       
-              {/* <li className='nav-btn'>
-                {button ? (
-                  <Link to='/sign-up' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>GET IN TOUCH</Button>
-                  </Link>
-                ) : (
-                  <Link to='/sign-up' className='btn-link'>
-                    <Button
-                      buttonStyle='btn--outline'
-                      buttonSize='btn--mobile'
-                      onClick={closeMobileMenu}
-                    >
-                      GET IN TOUCH
-                    </Button>
-                  </Link>
-                )}
-              </li> */}
             </ul>
           </div>
         </nav>
@@ -196,3 +118,5 @@ function scrollcontact() {
 }
 
 export default Navbar;
+
+

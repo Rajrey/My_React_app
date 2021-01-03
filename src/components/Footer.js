@@ -8,9 +8,12 @@ import {
   FaLinkedin
 } from 'react-icons/fa';
 import { CgInfinity, CgMail } from 'react-icons/cg';
-
+import { Container } from "@material-ui/core";
 function Footer() {
   return (
+    <Container style={{width:"100%",padding:"0",overflowX:"hidden !important"}}>
+
+  
     <div className='footer-container' id="footerbottom">
          <Grid container spacing={3} alignItems="center" justify="center" style={{textAlign:"center"}}>
          <Link to='/' className='social-logo'>
@@ -88,6 +91,7 @@ function Footer() {
         </div>
       </section> */}
     </div>
+    </Container>
   );
 }
 
