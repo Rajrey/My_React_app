@@ -5,6 +5,8 @@ import { Container } from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 import './Aboutme.css';
 import Zoom from 'react-reveal/Zoom';
+
+import { TiTick } from 'react-icons/ti';
 function Aboutme(){
   useEffect(() => {
     window.scrollTo({
@@ -32,7 +34,7 @@ function Aboutme(){
 
 
 
-<Box pt={10} pl={5} pr={5} pb={10} style={{color: "#ffff"}}>
+<Box pt={10} pl={4} pr={4} pb={10} style={{color: "#ffff"}}>
 
 
 <Typography  variant="h5" component="h5" gutterBottom justifycontent="left">
@@ -45,7 +47,22 @@ function Aboutme(){
       </Typography>
      
       <b><span  style={{fontFamily: 'Goldman',fontSize:"30px",borderBottom:"3px solid #7dc5ff"}}>NO BLUFF, SMART, SAVVY, BOLD</span></b>
-     
+     <p>
+     The unread pages are like unopened entryways. Don't worry, the door to me is always open for you. 
+     </p>
+     <p>
+       <mark>It's just a reader like you who brings life to the story</mark>
+     </p>
+     <p>
+     Have you ever been hanging tight for the unread double ticks<TiTick style={{color:"gray"}}/><TiTick style={{color:"gray",marginLeft:"-10px"}}/>? I'm pretty sure most of us do.
+     </p>
+     <p>
+     <mark>
+     Underneath there is a story holding back to turn blue<TiTick style={{color:"#7dc5ff"}}/><TiTick style={{color:"#7dc5ff",marginLeft:"-10px"}}/>
+     </mark>
+  
+     </p>
+ 
     </Box>
   </Grid>
 

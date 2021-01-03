@@ -11,6 +11,10 @@
     width: 100%; */
     cursor: grab;
     overflow: hidden !important;
+    /* image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges; */
+    /* image-rendering: pixelated; */
+    /* image-rendering: crisp-edges; */
  }
   .cursor,
 .cursor-border {
@@ -45,7 +49,9 @@
   }
  
   @media screen and (max-width: 960px) {
-   
+   p{
+     color:#c7c7c7;
+   }
     .cursor,
 .cursor-border {
 display: none;

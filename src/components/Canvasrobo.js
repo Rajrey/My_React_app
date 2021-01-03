@@ -17,38 +17,19 @@ class Canvasrobo extends React.Component {
     componentDidMount() {
     
         var scene, camera, renderer,myCanvas = document.getElementById('myCanvas');
-        // var antialias;
-        // var isMobile;
-        
-        // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
-        // {
-        //     isMobile = true;
-        // }
-        // else
-        // {
-        //     isMobile = false;
-        // }
-        
-        // if(isMobile)
-        // {
-        //     antialias = false;
-        // }
-        // else
-        // {
-        //     antialias = true;
-        // }
-        
         scene = new THREE.Scene();
         var container = document.getElementById( "grid2" );
        
         // scene.fillStyle = "blue";
         // camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 10000);
-        camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight);
-        camera.position.set(0, 0.8, 3);
+        camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 1000);
+        camera.position.set(2, 0.9, 3);
         
         renderer = new THREE.WebGLRenderer({ canvas: myCanvas, antialias: true , preserveDrawingBuffer: true,
-            alpha:false });
-        renderer.setPixelRatio(myCanvas.devicePixelRatio);
+            alpha:true,devicePixelRatio: 1 });
+            // console.log(myCanvas.devicePixelRatio);
+            // console.log(window.devicePixelRatio);
+        renderer.setPixelRatio(1);
         // renderer.setSize( 400, 400 );
         renderer.setClearColor(0x000000, 0);
         renderer.autoClear = false;
@@ -66,34 +47,24 @@ function onWindowResize(){
 camera.updateProjectionMatrix();
 
 renderer.setSize(container.clientWidth,container.clientHeight);
+renderer.setPixelRatio(1);
 // document.body.appendChild( container );
 container.appendChild( renderer.domElement ); 
-render();
+// render();
     } catch (error) {
        console.log("viewport")
     }
 
 
 }
-
-        // console.log(renderer)
-        
-        // document.body.appendChild( renderer.domElement );
         var controls = new OrbitControls(camera,renderer.domElement);
         controls.minDistance = 3;
         controls.maxDistance = 2.2;
         controls.mouseButtons = {
             LEFT: THREE.MOUSE.ROTATE,
             MIDDLE: THREE.MOUSE.DOLLY,
-            // RIGHT: THREE.MOUSE.PAN
         }
-        // controls.touches = {
-        //     ONE: THREE.TOUCH.ROTATE,
-        //     TWO: THREE.TOUCH.DOLLY_PAN
-        // }
         myCanvas.addEventListener('wheel',function(event){
-            // console.log("ggggg")
-            // console.log(event.wheelDelta )
             if(event.wheelDelta>0){
                 window.scrollBy({
                     top: -120,
@@ -122,10 +93,6 @@ render();
         light.position.setScalar(100);
     scene.add(light);
     scene.add(new THREE.AmbientLight(0xffffff, 0.25));
-
-
-
-
     // let light1 = new THREE.PointLight(0xffffff,1);
     //         light1.position.set(0,300,500);
     //         scene.add(light1);
@@ -158,26 +125,11 @@ render();
             scene.add(gltf.scene);
             // console.log("gltf.scene", gltf.scene);
             // console.log(scene.children)
-            // let theResult = scene.getObjectByName("Cube", true);
             let theResult = scene.getObjectByName("BezierCircle001", true);
-            // let theResult1 = scene.getObjectByName("BezierCircle001", true);
-            // theResult.layers.enable(1);
-            // theResult.material.emissiveIntensity = 1;
-            // theResult.castShadow = true;
-            // theResult.receiveShadow = true;
             theResult.material.emissive = new THREE.Color( 0x1089F6 );
-          
-            // theResult1.material.emissiveIntensity = 2;
-            // theResult1.castShadow = true;
-            // theResult1.receiveShadow = true;
-            // theResult1.material.emissive = new THREE.Color( 0x00ffff );
             theResult.layers.enable(1);
     // scene.add(theResult);
     let renderScene = new RenderPass( scene, camera )
-	
-//     let effectFXAA = new ShaderPass( FXAAShader )
-// effectFXAA.uniforms.resolution.value.set( 1 / window.innerWidth, 1 / window.innerHeight )
-	
 let bloomPass = new UnrealBloomPass( theResult, 1.5, 0.4, 0.85 )
 bloomPass.threshold = 0.11
 bloomPass.strength = 1.5
@@ -276,6 +228,8 @@ composer.addPass( bloomPass )
         // console.log("robo")
         // this.canvasRef.removeChild(document.getElementById('myCanvas'));
         // cancelAnimationFrame(render);
+        var elem = document.getElementById("myCanvas");
+elem.parentNode.removeChild(elem);
         window.removeEventListener( 'resize', this.onWindowResize, false );
         window.removeEventListener( 'wheel', this.onWindowResize, false );
         // window.removeEventListener( 'resize', this.onWindowResize, false );

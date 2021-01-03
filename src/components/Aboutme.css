@@ -342,9 +342,9 @@
 @media screen and (max-width: 960px) {
 
   .wrapper {
-    height: 900px;
+    height: 1100px;
     perspective: 1000px;
-    transform: perspective(130px) rotatex(30deg) scale(2);
+    transform: perspective(170px) rotatex(25deg) scale(2);
   }
   .wrapper .fade {
     height: 700px;

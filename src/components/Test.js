@@ -315,7 +315,7 @@ Thanks for stopping by!!
 </Grid>
 
 </Box>
-<Box pt={9} pl={5} pr={5} clone order={{ xs: 5, sm: 5,md:6, lg: 6}} style={{color: "#ffff"}}>
+<Box pt={9} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:6, lg: 6}} style={{color: "#ffff"}}>
 <Grid  item xs={12} sm={12} lg={8} md={8} style={{overflowX:"hidden !important"}}>
   <Fade right style={{overflowX:"hidden !important"}}>
 
@@ -350,7 +350,7 @@ Thanks for stopping by!!
 </Box>
 </Grid>
 <Grid container style={{maxWidth:"100%",margin:"0"}}>
-  <Box pt={10} pl={5} pr={5} >
+  <Box pt={10} pl={4} pr={4} >
   <Grid id="philosophy" item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
     <Fade top style={{overflowX:"hidden !important"}}>
     <Typography variant="h4" justifycontent="center">
@@ -523,7 +523,7 @@ Thanks for stopping by!!
   </Grid>
     
 </Box>
-<Box pt={11} pl={5} pr={5} clone order={{ xs: 2, sm: 2,md:1, lg: 1}} style={{color: "#ffff"}}>
+<Box pt={11} pl={4} pr={4} clone order={{ xs: 2, sm: 2,md:1, lg: 1}} style={{color: "#ffff"}}>
 <Grid item xs={12} sm={12} lg={6} md={6} id="illusions" style={{overflowX:"hidden !important"}}>
 <Fade left style={{overflowX:"hidden !important"}}>
 <Typography variant="h5" justifycontent="center">
@@ -545,7 +545,7 @@ And often called civilized people have increasingly become insane, driven & self
 </Box>
 <Box  pt={10} clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
 <Grid  item xs={12} sm={12} lg={12} md={12} id="illusions" style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
-<Typography variant="h4">
+<Typography variant="h4" gutterBottom>
   <Fade bottom style={{overflowX:"hidden !important"}}>
   <span style={{borderBottom:"3px solid #7dc5ff"}}>- I DREAM -</span>
   </Fade>
@@ -555,7 +555,7 @@ And often called civilized people have increasingly become insane, driven & self
       <span  style={{borderBottom:"2px solid #7dc5ff"}}>  Dream like you'll have a Deja Vu  </span>
 </Grid>
 </Box>
-<Box pt={10} pl={5} pr={5} clone order={{ xs: 5, sm: 5,md:5, lg: 5}} style={{color: "#ffff"}}>
+<Box pt={10} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}} style={{color: "#ffff"}}>
 <Grid style={{height:"400px",overflowX:"hidden !important"}} item xs={12} sm={12} lg={7} md={7} id="illusions">
 <Fade right style={{overflowX:"hidden !important"}}>
 <Typography variant="h5" justifycontent="center">

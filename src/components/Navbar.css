@@ -161,7 +161,7 @@
       position: absolute;
       /* top: 0; */
       left: 0;
-      transform: translate(15%, -15%);
+      transform: translate(15%, 15%);
     }
   
     .menu-icon {
@@ -171,7 +171,7 @@
       right: 0;
       margin-right: 15px;
       /* margin-top: 15px; */
-      transform: translate(15%, 15%);
+      transform: translate(15%, 20%);
       font-size: 1.8rem;
       cursor: pointer;
     }
