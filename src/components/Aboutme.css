@@ -334,7 +334,20 @@
   position: relative;
 }
 @media screen and (max-width: 960px) {
-
+#gridstory{
+  margin-top: -80px;
+}
+#wordlesvg1{
+ height: 100% !important;
+ width: 100% !important;
+}
+#wordlesvg2{
+  height: 100% !important;
+  width: 100% !important;
+ }
+#wordle2{
+  margin-top: -30px;
+}
   .wrapper {
     height: 1100px;
     perspective: 1000px;

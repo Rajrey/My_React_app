@@ -7,6 +7,8 @@ import './Aboutme.css';
 import Zoom from 'react-reveal/Zoom';
 import Button from '@material-ui/core/Button';
 import { TiTick } from 'react-icons/ti';
+import { GiReturnArrow } from 'react-icons/gi';
+import Fade from 'react-reveal/Fade';
 function Aboutme(){
   useEffect(() => {
     window.scrollTo({
@@ -138,39 +140,809 @@ function Aboutme(){
 
 
 
-
-
-
-
-
-
-
 <Grid container style={{overflow:"hidden !important"}}>
-
-
-<Box pt={10} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
-<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
-<Typography variant="h4" gutterBottom id="gridstory">
+<Box pt={10} pl={4} pr={4} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
+<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'left',overflowX:"hidden !important"}}>
+<Typography variant="h4" gutterBottom id="gridstory" style={{textAlign:"center"}}>
   <span style={{borderBottom:"3px solid #7dc5ff"}}>- A glimpse into my life -</span>
       </Typography>
-      <p>
-      The story begins at the point when I graduated as an average student ,I always had questions in my psyche. Does a degree with greater grades,evaluations prove one's true potential, ability & knowledge? Do they mirror all the skills that an individual truly possess? Is education the only way to carry on with life or Is it the general public who indoctrinated people to suppress the dreams of the dreamers and tell them just to follow the herd?
-You know, Even I was a piece of the same herd, since we can't expect change right away and sometimes we need to take the normal course followed by a U Turn to arrive at our end goal. So, I did the same with my life. The system which is created with all the benefits in leading a better life, to procure the bread & butter has additionally a dark side which will never have a special place to talk about. I consistently believed in myself that one day the skills, real life experiences & out of the box thinking, hard work will gauge more than my grades. And this is where I am right now. Wait did you lost the route? Let me guide you to my U Turn.
-      </p>
+      <Fade right>
 
+      
       <p>
-      Normal route to U Turn:
-I needed to organize the obligations of acquiring for the family first and needed to do equity to my procured degree. Along these lines, I endeavored to get recruited by a couple of companies and finally settled with one. Opportunity plays a crucial role in everybody's life. People really won't know who you are unless provided with an opportunity. For my situation, it turned out well and I needed to showcase all my skills in every possible way. People started acknowledging my work, true skills and for them, I was completely a different person for their opinion about me with regards to work. Gradually, I began to invest most of my leisure time on the skills that I wanted to nurture and hobbies that were abandoned because to the past conditions.
-Out of reliable hard work and nurturing the skills and hobbies which were never encouraged indirectly they've got inculcated in the work I do. This is my UTurn in life.
-The grades are just like an entry ticket but the entire show runs with what we believe, our actual potential, skills, and vision.
+      The story begins at the point when I graduated as an average student , I always had questions in my psyche. Does a degree with greater grades, evaluations prove one's true potential, ability & knowledge? Do they mirror all the skills that an individual truly possess? Is education the only way to carry on with life or Is it the general public who indoctrinated people to suppress the dreams of the dreamers and tell them just to follow the herd?
+ 
       </p>
+<p>
+You know, Even I was a piece of the same herd, since we can't expect change right away and sometimes&nbsp;
+<mark>
+ we need to take the normal course followed by a U Turn to reach at our end goal
+</mark>
+. So, I did the same with my life. 
+</p>
+<p>
+The system which is created with all the benefits for leading a better life, to procure the bread & butter has additionally a dark side which will never have a special place to talk about.
+</p>
+<p>
+  <mark>
+  I consistently believed in myself that one day the skills, real life experiences & out of the box thinking, hard work will gauge more than my grades
+  </mark>
+
+ . And this is where I am right now. 
+</p>
+<p>
+<mark>
+ Wait did you lost the route? Let me guide you to my U Turn
+ </mark>.
+</p>
+<Button variant="outlined" onClick={ovalscroll1} color="secondary" style={{color:"#ffff",marginTop:"10px",zIndex:"3"}}>Way to U Turn</Button> 
+</Fade>
 </Grid>
     
 </Box>
 
-
+<Box pt={10} pl={4} pr={4} clone order={{ xs: 2, sm: 2,md:2, lg: 2}}>
+<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'left',overflowX:"hidden !important"}}>
+<Typography variant="h4" gutterBottom id="ustory" style={{textAlign:"center"}}>
+  <span style={{borderBottom:"3px solid #7dc5ff"}}>- U Turn <GiReturnArrow/>-</span>
+      </Typography>
+      <Fade right>
+      <p>
+      I needed to organize the obligations of acquiring for the family first and to do equity to my procured degree. Along these lines, I endeavored to get recruited by a couple of companies and finally settled with one. 
+      </p>
+      <p>
+        <mark>
+        Opportunity plays a crucial role in everybody's life. People really won't know who you are unless provided with an opportunity
+        </mark>.
+     
+      </p>
+      <p>
+      For my situation, it turned out to be well and I needed to showcase all my skills in every possible way and utilize the opportunity. People started acknowledging my work, true skills and for them, I was completely a different person for their opinion about me with regards to work. Gradually, I began to invest most of my leisure time on the skills that I wanted to nurture and hobbies that were abandoned because of the past conditions.
+      </p>
+      <p>
+      Out of reliable hard work and nurturing the skills and hobbies which were never encouraged, they've indirectly been inculcated in the work that I do now. This is my UTurn in life.
+      </p>
+      <p>
+        <mark>
+        The grades are just like an entry ticket but the entire show runs with what we believe, our actual potential, skills, and vision
+        </mark>.
+      </p>
+        </Fade>
+      
+</Grid>
+    
+</Box>
+<Box pt={10} clone order={{ xs: 3, sm: 3,md:3, lg: 3}}>
+<Grid  item xs={12} sm={12} lg={12} md={12}>
+<Typography variant="h4" gutterBottom id="ustory" style={{textAlign:"center",color:"#ffff"}}>
+  <span style={{borderBottom:"3px solid #7dc5ff"}}>- Abstract peek for non-readers -</span>
+      </Typography>
 </Grid>
 
+</Box>
+</Grid>
+
+<Grid container style={{overflow:"hidden !important"}}>
+<Box pt={8} pl={4} pr={4} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
+<Grid  item xs={12} sm={12} lg={6} md={6} id="wordle1" gutterBottom>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1768.85 1614.599"
+      preserveAspectRatio="xMidYMin meet"
+      style={{width:"85%",top:"0",left:"0",height:"85%"}} 
+      id="wordlesvg1">
+      <text
+        y={-1020.056}
+        x={374.235}
+        transform="rotate(90)"
+        data-key="Active"
+        fontSize={122.133}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.357}
+      >
+        {"Business"}
+      </text>
+      <text
+        transform="rotate(90)"
+        data-key="Allure"
+        x={348.076}
+        y={-1447.938}
+        fontSize={360.217}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={5.603}
+      >
+        {"Art"}
+      </text>
+      <text
+        transform="rotate(90)"
+        data-key="Art"
+        x={914.099}
+        y={-1024.505}
+        fontSize={87.04}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={8.704}
+      >
+        {"Analyst"}
+      </text>
+      <text
+        transform="rotate(90)"
+        data-key="Big"
+        x={396.056}
+        y={-1169.297}
+        fontSize={112.243}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={11.224}
+      >
+        {"Development"}
+      </text>
+      <text
+        data-key="Business"
+        x={556.006}
+        y={674.378}
+        fontSize={140.701}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={14.07}
+      >
+        {"Logic"}
+      </text>
+      <text
+        data-key="Coder"
+        x={540.928}
+        y={151.727}
+        fontSize={195.015}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        stroke="#fff"
+        strokeWidth={6.001}
+      >
+        {"Creative"}
+      </text>
+      <text
+        transform="rotate(90)"
+        data-key="Creative"
+        x={1315.382}
+        y={-1658.642}
+        fontSize={153.639}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={15.364}
+      >
+        {"Djying"}
+      </text>
+      <g stroke="#fff" strokeWidth={1.474}>
+        <text
+          y={205.961}
+          x={-373.79}
+          data-key="Customization"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          transform="translate(2138.334 621.426) scale(3.33683)"
+        >
+          {"Disc"}
+        </text>
+        <text
+          data-key="Dance"
+          x={-247.043}
+          y={207.065}
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          transform="translate(2138.334 621.426) scale(3.33683)"
+        >
+          {"Jockey"}
+        </text>
+      </g>
+      <text
+        transform="rotate(90)"
+        data-key="Djying"
+        x={1131.593}
+        y={-247.15}
+        fontSize={195.75}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={19.575}
+      >
+        {"Attitude"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={-610.86}
+          x={477.718}
+          data-key="Effective"
+          transform="matrix(0 1.60464 -1.60464 0 742.694 -74.303)"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+        >
+          {"Hard"}
+        </text>
+        <text
+          y={-606.525}
+          x={618.464}
+          data-key="Empathy"
+          transform="matrix(0 1.60464 -1.60464 0 742.694 -74.303)"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+        >
+          {"Work"}
+        </text>
+      </g>
+      <text
+        data-key="Explorer"
+        x={1443.438}
+        y={896.57}
+        fontSize={61.945}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={6.194}
+      >
+        {"Illustrator"}
+      </text>
+      <text
+        data-key="Jockey"
+        x={1306.18}
+        y={1483.081}
+        fontSize={92.051}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={9.205}
+      >
+        {"Dreamer"}
+      </text>
+      <text
+        data-key="Music"
+        x={1398.039}
+        y={1080.015}
+        fontSize={90.689}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={9.069}
+      >
+        {"Humour"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={338.878}
+          x={-59.126}
+          data-key="noob"
+          fontSize={71.171}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={7.117}
+          transform="matrix(1.34638 0 0 1.34638 344.095 -97.085)"
+        >
+          {"Effective"}
+        </text>
+        <text
+          y={418.698}
+          x={43.135}
+          data-key="Operations"
+          fontSize={65.216}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={6.522}
+          transform="matrix(1.34638 0 0 1.34638 344.095 -97.085)"
+        >
+          {"Communication"}
+        </text>
+      </g>
+      <text
+        transform="rotate(90)"
+        data-key="Outspoken"
+        x={419.361}
+        y={-1324.458}
+        fontSize={80.611}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={8.061}
+      >
+        {"Empathy"}
+      </text>
+      <text
+        data-key="Persuasion"
+        x={633.536}
+        y={1132.148}
+        fontSize={99.415}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={9.942}
+      >
+        {"Unique"}
+      </text>
+      <text
+        transform="rotate(90)"
+        data-key="Sincere"
+        x={1062.359}
+        y={-40.702}
+        fontSize={147.207}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#111"
+        stroke="#fff"
+        strokeWidth={4.421}
+      >
+        {"Technophile"}
+      </text>
+      <text
+        transform="rotate(90)"
+        data-key="Style"
+        x={560.527}
+        y={-873.391}
+        fontSize={78.283}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={7.828}
+      >
+        {"Persuasion"}
+      </text>
+      <text
+        data-key="Tasking"
+        x={768.019}
+        y={938.788}
+        fontSize={84.25}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={8.425}
+      >
+        {"Engineer"}
+      </text>
+      <text
+        data-key="Work"
+        x={693.75}
+        y={1493.409}
+        fontSize={136.308}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={13.631}
+      >
+        {"Allure"}
+      </text>
+    </svg>
+  </Grid>
+
+</Box>
+<Box pt={8} pl={4} pr={4} clone order={{ xs: 2, sm: 2,md:2, lg: 2}}>
+<Grid  item xs={12} sm={12} lg={6} md={6} id="wordle2" gutterBottom> 
+<svg
+      xmlns="http://www.w3.org/2000/svg"
+      style={{width:"85%",top:"0",left:"0",height:"85%"}} 
+      viewBox="0 0 457.475 353.863"
+	  preserveAspectRatio="xMidYMin meet"
+    id="wordlesvg2">
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Analyst"
+        x={67.54}
+        y={-107.649}
+        fontSize={40.477}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        stroke="#efefef"
+        strokeWidth={1.39}
+      >
+        {"Dance"}
+      </text>
+      <text
+        y={236.869}
+        x={9.559}
+        data-key="Decision"
+        fontSize={18.832}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.883}
+        transform="rotate(90 36.666 266.973)"
+      >
+        {"Problem"}
+      </text>
+      <text
+        y={236.918}
+        x={85.607}
+        data-key="Developer"
+        fontSize={18.663}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.866}
+        transform="rotate(90 36.666 266.973)"
+      >
+        {"Solver"}
+      </text>
+      <g stroke="#fff" strokeWidth={1.142}>
+        <text
+          y={1330.585}
+          x={1728.213}
+          data-key="Development"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          transform="matrix(.70764 0 0 .70764 -985.76 -597.882)"
+        >
+          {"Question"}
+        </text>
+        <text
+          y={1329.638}
+          x={1939.486}
+          data-key="Disc"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          transform="matrix(.70764 0 0 .70764 -985.76 -597.882)"
+        >
+          {"Thinking"}
+        </text>
+      </g>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Dreamer"
+        x={323.084}
+        y={-2.701}
+        fontSize={22.764}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={2.276}
+      >
+        {"Style"}
+      </text>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Engineer"
+        x={85.217}
+        y={-142.946}
+        fontSize={22.019}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={2.202}
+      >
+        {"Quick Learner"}
+      </text>
+      <text
+        data-key="Handcrafts"
+        x={5.031}
+        y={267.72}
+        fontSize={19.992}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.999}
+        transform="translate(141.853 -.121)"
+      >
+        {"Handcrafts"}
+      </text>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Humour"
+        x={199.326}
+        y={-286.127}
+        fontSize={41.205}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={4.12}
+      >
+        {"Developer"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={-689.042}
+          x={-553.19}
+          data-key="Illustrator"
+          transform="rotate(90 -302.07 85.5) scale(.62193)"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+        >
+          {"Big"}
+        </text>
+        <text
+          y={-685.942}
+          x={-417.059}
+          data-key="Inspiring"
+          transform="rotate(90 -302.07 85.5) scale(.62193)"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+        >
+          {"Picture"}
+        </text>
+      </g>
+      <text
+        data-key="Interpersonal"
+        x={243.495}
+        y={131.866}
+        fontSize={15.314}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.531}
+        transform="translate(141.853 -.121)"
+      >
+        {"Explorer"}
+      </text>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Learner"
+        x={237.729}
+        y={133.71}
+        fontSize={35.37}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        stroke="#fff"
+        strokeWidth={1.4}
+      >
+        {"Psychophile"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={800.757}
+          x={1697.343}
+          data-key="Listener"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+          transform="matrix(.39282 0 0 .39282 -354.288 -126.055)"
+        >
+          {"Music"}
+        </text>
+        <text
+          y={801.348}
+          x={1866.687}
+          data-key="Logic"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+          transform="matrix(.39282 0 0 .39282 -354.288 -126.055)"
+        >
+          {"Producer"}
+        </text>
+      </g>
+      <text
+        data-key="Passion"
+        x={-66.142}
+        y={29.655}
+        fontSize={29.47}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={2.947}
+        transform="translate(141.853 -.121)"
+      >
+        {"Strategy"}
+      </text>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Picture"
+        x={255.571}
+        y={-87.957}
+        fontSize={16.433}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.643}
+      >
+        {"Outspoken"}
+      </text>
+      <text
+        data-key="Problem"
+        x={-8.38}
+        y={103.912}
+        fontSize={19.781}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.978}
+        transform="translate(141.853 -.121)"
+      >
+        {"Sincere"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={232.459}
+          x={1882.124}
+          data-key="Programmer"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+          transform="translate(-334.104 -4.726) scale(.36316)"
+        >
+          {"Decision"}
+        </text>
+        <text
+          y={234.482}
+          x={2056.791}
+          data-key="Psychophile"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+          transform="translate(-334.104 -4.726) scale(.36316)"
+        >
+          {"Maker"}
+        </text>
+      </g>
+      <text
+        data-key="Question"
+        x={168.889}
+        y={306.563}
+        fontSize={20.293}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={2.029}
+        transform="translate(141.853 -.121)"
+      >
+        {"Managerial"}
+      </text>
+      <text
+        style={{
+          InkscapeFontSpecification: "'Arial Rounded MT Bold, '",
+        }}
+        data-key="Sense"
+        x={-48.59}
+        y={153.638}
+        fontWeight={400}
+        fontSize={18.227}
+        fontFamily="Arial Rounded MT Bold"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.823}
+        transform="translate(141.853 -.121)"
+      >
+        {"Programmer"}
+      </text>
+      <text
+        data-key="Sketching"
+        x={251.007}
+        y={34.245}
+        fontSize={38.39}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        stroke="#c7c7c7"
+        strokeWidth={1.339}
+        transform="translate(141.853 -.121)"
+      >
+        {"Coder"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={293.014}
+          x={1049.623}
+          data-key="Solver"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+          transform="translate(-431.159 -72.967) scale(.46435)"
+        >
+          {"Multi"}
+        </text>
+        <text
+          y={294.102}
+          x={1208.904}
+          data-key="Strategy"
+          fontSize={39.996}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={4}
+          transform="translate(-431.159 -72.967) scale(.46435)"
+        >
+          {"Tasking"}
+        </text>
+      </g>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Techie"
+        x={129.268}
+        y={-189.785}
+        fontSize={14.602}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.46}
+      >
+        {"Research"}
+      </text>
+      <g fill="#fff">
+        <text
+          y={686.866}
+          x={933.699}
+          data-key="Technophile"
+          fontSize={79.406}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={7.941}
+          transform="matrix(.21183 0 0 .21183 -111.206 40.974)"
+        >
+          {"Active"}
+        </text>
+        <text
+          y={682.898}
+          x={1244.028}
+          data-key="Thinking"
+          fontSize={66.815}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={6.682}
+          transform="matrix(.21183 0 0 .21183 -111.206 40.974)"
+        >
+          {"Listener"}
+        </text>
+      </g>
+      <text
+        data-key="Unique"
+        x={231.627}
+        y={238.053}
+        fontSize={16.13}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.613}
+        transform="translate(141.853 -.121)"
+      >
+        {"Inspiring"}
+      </text>
+      <text
+        transform="rotate(90 70.987 70.866)"
+        data-key="Managerial"
+        x={238.045}
+        y={-173.37}
+        fontSize={19.933}
+        fontFamily="'Arial Black',Gadget,sans-serif"
+        textAnchor="middle"
+        fill="#fff"
+        strokeWidth={1.993}
+      >
+        {"Passion"}
+      </text>
+      <g fill="#fff">
+        <text
+          data-key="Technophile"
+          x={1021.133}
+          y={686.866}
+          fontSize={79.406}
+          fontFamily="'Arial Black',Gadget,sans-serif"
+          textAnchor="middle"
+          strokeWidth={7.941}
+          transform="matrix(.21183 0 0 .21183 -81.073 79.192)"
+        >
+          {"Writer"}
+        </text>
+      </g>
+    </svg>
+  </Grid>
+  </Box>
+</Grid>
 
 </Container>    
     )

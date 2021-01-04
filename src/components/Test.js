@@ -321,9 +321,11 @@ Thanks for stopping by!!
 
   
 <Typography variant="h6" style={{textAlign: 'left'}}>
-        <span> <CgInfinity/><b style={{fontFamily: 'Goldman'}}>RHE </b>stands for
+  <mark>
+  <span> <CgInfinity/><b style={{fontFamily: 'Goldman'}}>RHE </b>stands for
         Infinite Reality Has Evolved
               </span>
+  </mark>
       </Typography>
 {/* <p><CgInfinity/>RHE stands for Infinite Reality Has Evolved</p> */}
 <p>Most of the untold stories of people when brought into the limelight they somehow inspire and empower us, right?</p>

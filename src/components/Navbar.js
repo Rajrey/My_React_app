@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { CgInfinity, CgMenuRight } from 'react-icons/cg';
-import { FaTimes } from 'react-icons/fa';
+import { CgInfinity, 
+  // CgMenuRight 
+} from 'react-icons/cg';
+import { FaTimes, FaGripLines } from 'react-icons/fa';
 // import { SiFacebook, SiInstagram, SiLinkedin, SiGmail } from 'react-icons/si';
 
 import { IconContext } from 'react-icons/lib';
@@ -72,7 +74,10 @@ function scrollcontact() {
               <b style={{fontFamily: 'Goldman'}}>RHE</b>
             </NavLink>
             <div className='menu-icon' onClick={handleClick} style={{WebkitTapHighlightColor: "transparent"}}>
-              {click ? <FaTimes /> : <CgMenuRight />}
+              {click ? <FaTimes /> : 
+              // <CgMenuRight />
+              <FaGripLines />
+              }
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
