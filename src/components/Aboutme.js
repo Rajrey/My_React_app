@@ -5,7 +5,7 @@ import { Container } from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 import './Aboutme.css';
 import Zoom from 'react-reveal/Zoom';
-
+import Button from '@material-ui/core/Button';
 import { TiTick } from 'react-icons/ti';
 function Aboutme(){
   useEffect(() => {
@@ -14,26 +14,22 @@ function Aboutme(){
       behavior: "smooth"
   });
   }, []);
+  function ovalscroll1() {
+          // e.preventDefault();
+          window.scrollBy({
+            top: 100,
+            behavior: 'smooth'
+          });
+        }
     return (
       
         <Container style={{width:"100%",padding:"0",height:"100%"}}>
 
           
-<Grid container>
+<Grid container style={{overflow:"hidden !important"}}>
 
 <Box clone order={{ xs: 2, sm: 2 ,md:1, lg:1}} style={{overflow:"hidden !important"}}>
-<Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"400px",overflow:"hidden !important"}} >
-
-<div className="containerline" style={{overflow:"hidden !important"}}>
-  <div className="wrapper">
-    <div className="fade"></div>
-    <div className="line-grid">
-     </div>
-  </div>
-  </div>
-
-
-
+<Grid item xs={12} sm={12} lg={9} md={9} id="grid4" style={{height:"500px",overflow:"hidden !important"}} >
 <Box pt={10} pl={4} pr={4} pb={10} style={{color: "#ffff"}}>
 
 
@@ -62,7 +58,8 @@ function Aboutme(){
      </mark>
   
      </p>
- 
+     <Button variant="outlined" onClick={ovalscroll1} color="secondary" style={{color:"#ffff",marginTop:"10px",zIndex:"3"}}>View Story</Button> 
+    
     </Box>
   </Grid>
 
@@ -121,10 +118,58 @@ function Aboutme(){
     
 </Box>
 
-
+{/* <Box pt={10} clone order={{ xs: 3, sm: 3,md:3, lg: 3}}> */}
+{/* <div className="containerline" style={{overflow:"hidden !important"}}>
+  <div className="wrapper">
+    <div className="fade"></div>
+    <div className="line-grid">
+     </div>
+  </div>
+  </div> */}
+{/* </Box> */}
+<div className="containerline" style={{overflow:"hidden !important"}}>
+  <div className="wrapper">
+    <div className="fade"></div>
+    <div className="line-grid">
+     </div>
+  </div>
+  </div>
 </Grid>
 
 
+
+
+
+
+
+
+
+
+<Grid container style={{overflow:"hidden !important"}}>
+
+
+<Box pt={10} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
+<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
+<Typography variant="h4" gutterBottom id="gridstory">
+  <span style={{borderBottom:"3px solid #7dc5ff"}}>- A glimpse into my life -</span>
+      </Typography>
+      <p>
+      The story begins at the point when I graduated as an average student ,I always had questions in my psyche. Does a degree with greater grades,evaluations prove one's true potential, ability & knowledge? Do they mirror all the skills that an individual truly possess? Is education the only way to carry on with life or Is it the general public who indoctrinated people to suppress the dreams of the dreamers and tell them just to follow the herd?
+You know, Even I was a piece of the same herd, since we can't expect change right away and sometimes we need to take the normal course followed by a U Turn to arrive at our end goal. So, I did the same with my life. The system which is created with all the benefits in leading a better life, to procure the bread & butter has additionally a dark side which will never have a special place to talk about. I consistently believed in myself that one day the skills, real life experiences & out of the box thinking, hard work will gauge more than my grades. And this is where I am right now. Wait did you lost the route? Let me guide you to my U Turn.
+      </p>
+
+      <p>
+      Normal route to U Turn:
+I needed to organize the obligations of acquiring for the family first and needed to do equity to my procured degree. Along these lines, I endeavored to get recruited by a couple of companies and finally settled with one. Opportunity plays a crucial role in everybody's life. People really won't know who you are unless provided with an opportunity. For my situation, it turned out well and I needed to showcase all my skills in every possible way. People started acknowledging my work, true skills and for them, I was completely a different person for their opinion about me with regards to work. Gradually, I began to invest most of my leisure time on the skills that I wanted to nurture and hobbies that were abandoned because to the past conditions.
+Out of reliable hard work and nurturing the skills and hobbies which were never encouraged indirectly they've got inculcated in the work I do. This is my UTurn in life.
+The grades are just like an entry ticket but the entire show runs with what we believe, our actual potential, skills, and vision.
+      </p>
+</Grid>
+    
+</Box>
+
+
+</Grid>
 
 
 </Container>    

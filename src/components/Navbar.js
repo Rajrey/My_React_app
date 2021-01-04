@@ -15,33 +15,33 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
+  // const [prevScrollY, setPrevScrollY] = useState(window.scrollY);
 
-  window.onscroll = () => {
-    const elem = document.querySelector(".navbar");
-    const elem1 = document.querySelector(".menu-icon");
-    const elem2 = document.querySelector(".navbar-logo");
-    if (
-      (window.scrollY < 10 && elem.style.height === "35px") ||
-      window.scrollY - prevScrollY < -70
-    ) {
-      if(!click){
-        setPrevScrollY(window.scrollY);
-        elem.style.animation = "scrollUp 0.5s ease-in-out forwards";
-        elem1.style.animation = "scrollUp 0.5s ease-in-out forwards";
-        elem2.style.animation = "scrollUp 0.5s ease-in-out forwards";
-      }
+  // window.onscroll = () => {
+  //   const elem = document.querySelector(".navbar");
+  //   const elem1 = document.querySelector(".menu-icon");
+  //   const elem2 = document.querySelector(".navbar-logo");
+  //   if (
+  //     (window.scrollY < 10 && elem.style.height === "35px") ||
+  //     window.scrollY - prevScrollY < -70
+  //   ) {
+  //     if(!click){
+  //       setPrevScrollY(window.scrollY);
+  //       elem.style.animation = "scrollUp 0.5s ease-in-out forwards";
+  //       elem1.style.animation = "scrollUp 0.5s ease-in-out forwards";
+  //       elem2.style.animation = "scrollUp 0.5s ease-in-out forwards";
+  //     }
       
-    } else if (window.scrollY - prevScrollY > 70) {
-      if(!click){
-        setPrevScrollY(window.scrollY);
-        elem.style.animation = "scrollDown 0.5s ease-in-out forwards";
-        elem1.style.animation = "scrollDown 0.5s ease-in-out forwards";
-        elem2.style.animation = "scrollDown 0.5s ease-in-out forwards";
-      }
+  //   } else if (window.scrollY - prevScrollY > 70) {
+  //     if(!click){
+  //       setPrevScrollY(window.scrollY);
+  //       elem.style.animation = "scrollDown 0.5s ease-in-out forwards";
+  //       elem1.style.animation = "scrollDown 0.5s ease-in-out forwards";
+  //       elem2.style.animation = "scrollDown 0.5s ease-in-out forwards";
+  //     }
  
-    }
-  };
+  //   }
+  // };
 
 
 //   const showButton = () => {
