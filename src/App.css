@@ -50,8 +50,11 @@
  
   @media screen and (max-width: 960px) {
    p{
-     color:#c7c7c7;
+     color:#e6e6e6;
    }
+   mark{
+    color: #e6e6e6 !important;
+  }
     .cursor,
 .cursor-border {
 display: none;

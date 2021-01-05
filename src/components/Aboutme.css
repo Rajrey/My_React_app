@@ -337,9 +337,13 @@
 #gridstory{
   margin-top: -80px;
 }
+#gridexplore{
+  margin-top: -80px;
+}
 #wordlesvg1{
  height: 100% !important;
  width: 100% !important;
+ margin-left: 0 !important;
 }
 #wordlesvg2{
   height: 100% !important;
@@ -354,8 +358,10 @@
     transform: perspective(170px) rotatex(25deg) scale(2);
   }
   .wrapper .fade {
-    height: 700px;
+    /* height: 700px; */
+    height: 5px !important;
   }
+
   .wrapper .line-grid {
     height: 600px !important;
   }

@@ -280,7 +280,7 @@ Thanks for stopping by!!
 <Box  clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
 <Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
 <Typography variant="h4" gutterBottom id="gridwelcome">
-  <Fade bottom style={{overflowX:"hidden !important"}}>
+  <Fade bottom style={{overflowX:"hidden !important"}} distance={"2rem"} duratrion={300}>
   <span style={{borderBottom:"3px solid #7dc5ff"}}>- Welcome to <CgInfinity/>
               <b style={{fontFamily: 'Goldman'}}>RHE</b> -</span>
   </Fade>
@@ -548,7 +548,7 @@ And often called civilized people have increasingly become insane, driven & self
 <Box  pt={10} clone order={{ xs: 3, sm: 3,md:3, lg: 3}} >
 <Grid  item xs={12} sm={12} lg={12} md={12} id="illusions" style={{color: "#ffff", textAlign: 'center',overflowX:"hidden !important"}}>
 <Typography variant="h4" gutterBottom>
-  <Fade bottom style={{overflowX:"hidden !important"}}>
+  <Fade bottom style={{overflowX:"hidden !important"}} distance={"2rem"} duratrion={300}>
   <span style={{borderBottom:"3px solid #7dc5ff"}}>- I DREAM -</span>
   </Fade>
    
