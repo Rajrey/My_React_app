@@ -37,60 +37,61 @@ function Aboutme() {
 
   const tutorialSteps = [
     {
-      label: 'San Francisco – Oakland Bay Bridge, United States',
+      label: 'Painting',
       imgPath:
-        'paint.jpeg',
+        'paint1.jpeg',
     },
     {
-      label: 'Bird',
+      label: 'Detailing',
       imgPath:
-        'goa.jpg',
+  'shades1.jpeg',
     },
     {
-      label: 'Bali, Indonesia',
+      label: 'Dance',
       imgPath:
-  'dj.jpeg',
+    'kmitra1.jpg',
     },
     {
-      label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
+      label: 'Posing',
       imgPath:
-  'shades.jpeg',
+    'walk1.jpg',
     },
     {
-      label: 'Goč, Serbi',
+      label: 'Photography',
       imgPath:
-    'black.jpg',
+    'train1.jpg',
     },
     {
-      label: 'Goč, Serbghga',
+      label: 'Dancing',
       imgPath:
-    'train.jpg',
+    'round1.jpeg',
     },
     {
-      label: 'Goč, Serbikkja',
+      label: 'Exploring',
       imgPath:
-    'plant.jpeg',
+        'goa1.jpg',
     },
     {
-      label: 'Goč, Serbiwwa',
+      label: 'Crafting',
       imgPath:
-    'round.jpeg',
+    'black1.jpg',
     },
     {
-      label: 'Gočyyy, Serbia',
+      label: 'Handcrafting',
       imgPath:
-    'mic.jpg',
+    'plant1.jpeg',
     },
     {
-      label: 'Goč, Seeeeerbia',
+      label: 'Event Managing/ Participating',
       imgPath:
-    'kmitra.jpg',
+    'mic1.jpg',
     },
     {
-      label: 'Goč, Serbiiiiiia',
+      label: 'Djying',
       imgPath:
-    'walk.jpg',
-    },
+  'dj2.jpg',
+    }
+
   ];
   
   const useStyles = makeStyles((theme) => ({
@@ -106,7 +107,7 @@ function Aboutme() {
       backgroundColor: theme.palette.background.default,
     },
     img: {
-      height: 255,
+      height: 155,
       display: 'block',
       maxWidth: 400,
       overflow: 'hidden',
@@ -329,7 +330,7 @@ function Aboutme() {
     
     <Grid container style={{overflow:"hidden !important"}}>
     <Box pt={8} pl={4} pr={4} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
-    <Grid  item xs={12} sm={12} lg={6} md={6} id="wordle1" gutterBottom>
+    <Grid  item xs={12} sm={12} lg={6} md={6} id="wordle1">
       <Fade left>
       <div>
       <svg
@@ -639,7 +640,7 @@ function Aboutme() {
     
     </Box>
     <Box pt={9} pl={4} pr={4} clone order={{ xs: 2, sm: 2,md:2, lg: 2}}>
-    <Grid  item xs={12} sm={12} lg={6} md={6} id="wordle2" gutterBottom> 
+    <Grid  item xs={12} sm={12} lg={6} md={6} id="wordle2"> 
     <Fade right>
       <div>
       <svg
@@ -1062,7 +1063,7 @@ function Aboutme() {
       </Box>
      
       <Box pt={4} pl={4} pr={4} clone order={{ xs: 3, sm: 3,md:3, lg: 3}}>
-    <Grid  item xs={12} sm={12} lg={6} md={6}  gutterBottom>
+    <Grid  item xs={12} sm={12} lg={6} md={6}>
     <Fade left>
       <div>
       <svg
@@ -1194,10 +1195,10 @@ function Aboutme() {
       </Grid>
       </Box>
       <Box pt={17} pl={4} pr={4} clone order={{ xs: 4, sm: 4,md:4, lg: 4}}>
-    <Grid  item xs={12} sm={12} lg={6} md={6}  gutterBottom style=
+    <Grid  item xs={12} sm={12} lg={6} md={6} style=
     {{color:"#ffff"}} id="gridexplore"> 
       <Fade right>
-      <Typography variant="h4" gutterBottom style={{textAlign:"left"}}>
+      <Typography variant="h4" style={{textAlign:"left"}}>
       <span style={{borderBottom:"3px solid #7dc5ff",textAlign:"center"}}>- I EXPLORE -</span>
           </Typography>
           <p>
@@ -1219,11 +1220,14 @@ function Aboutme() {
       </Box>
 
 
-      <Box pt={10} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
-    <Grid  item xs={12} sm={12} lg={6} md={6}  gutterBottom style=
-    {{color:"#ffff"}}> 
-<Typography variant="h4" gutterBottom style={{textAlign:"left",color:"#ffff"}}>
-      <span style={{borderBottom:"3px solid #7dc5ff"}}>- The abilities that I have  -</span>
+      <Box pt={16} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
+    <Grid  item xs={12} sm={12} lg={8} md={8} style=
+    {{color:"#ffff"}} id="abilities"> 
+    <Fade left>
+
+ 
+<Typography variant="h4" style={{textAlign:"left",color:"#ffff"}}>
+      <span style={{borderBottom:"3px solid #7dc5ff"}}>- My abilities -</span>
           </Typography>
           <p>
 - Sketching/Painting/Illustration/Artist <br />
@@ -1233,13 +1237,14 @@ function Aboutme() {
 - Handcrafts/Art<br />
 - Understanding human physc/Interest in pyschology<br /> 
 - Frontend Development/UI-UX Designer<br />
+- UI/Websites Development<br />
 - Web/PWA Development<br />
 - Full stack development at times<br />
-- Mobile application developement<br />
+- Mobile application development<br />
 - Sense of humor<br />
 - Effective correspondence<br /> 
-- Analyzing skills,Problem solving,Logical thinking<br /> 
-- Question thinking,Quick learning and Adapting<br />
+- Analyzing skills, Problem solving, Logical thinking<br /> 
+- Question thinking ,Quick learning and Adapting<br />
 - Detail oriented<br />
 - Styling<br />
 - Writing<br />
@@ -1247,16 +1252,19 @@ function Aboutme() {
 - Multitasking<br />
 - Photography<br />
 - Cooking<br />
-- ideating<br />
+- Ideating<br />
+- Right Attitude<br />
+- Out of the box thinking<br />
           </p>
+          </Fade>
     </Grid>
     </Box>
-    <Box pt={10} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
-    <Grid  item xs={12} sm={12} lg={6} md={6}  gutterBottom style=
+    <Box pt={10} pl={0.6} pr={0.6} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
+    <Grid  item xs={12} sm={12} lg={4} md={4} style=
     {{color:"#ffff"}}> 
 <div className={classes.root}>
-    <Paper square elevation={0} className={classes.header}>
-      <Typography>{tutorialSteps[activeStep].label}</Typography>
+    <Paper style={{color:"black"}} square elevation={1} className={classes.header}>
+      <Typography variant="h5" style={{fontSize:"medium"}}>{tutorialSteps[activeStep].label}</Typography>
     </Paper>
     <AutoPlaySwipeableViews
       axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -1294,7 +1302,7 @@ function Aboutme() {
     </Grid>
     </Box>
     <Box pt={10} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
-    <Grid  item xs={12} sm={12} lg={12} md={12}  gutterBottom style=
+    <Grid  item xs={12} sm={12} lg={12} md={12} style=
     {{color:"#ffff"}}> 
 
     </Grid>

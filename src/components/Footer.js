@@ -41,48 +41,46 @@ function Footer() {
         </Grid>
         <Grid container spacing={2} alignItems="center" justify="center" style={{textAlign:"center",marginTop:"30px"}}>
         <div className='social-icons'>
-            <Link
+            <a
               className='social-icon-link'
-              to='/'
-              target='_blank'
+              href='https://m.facebook.com/raja.rey.50'
               aria-label='Facebook'
+              target="_blank" rel="noreferrer"
             >
               <FaFacebook />
-            </Link>
-            <Link
+            </a>
+            <a
               className='social-icon-link'
-              to='/'
-              target='_blank'
+              href='https://www.instagram.com/raj_rey/'
               aria-label='Instagram'
+              target="_blank" rel="noreferrer"
             >
               <FaInstagram />
-            </Link>
-            <Link
+            </a>
+            <a
               className='social-icon-link'
-              to={
-                '//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber'
-              }
-              target='_blank'
+              href='https://youtu.be/9KGMl4Y3cl0'
               aria-label='Youtube'
+              target="_blank" rel="noreferrer"
             >
               <FaYoutube />
-            </Link>
-            <Link
+            </a>
+            <a
               className='social-icon-link'
-              to='/'
-              target='_blank'
+              href='mailto: rajreyansh1996@gmail.com'
               aria-label='Gmail'
+              target="_blank" rel="noreferrer"
             >
               <CgMail />
-            </Link>
-            <Link
+            </a>
+            <a
               className='social-icon-link'
-              to='/'
-              target='_blank'
+              href='https://www.linkedin.com/mwlite/in/raj-reyansh-7a0797164'
               aria-label='LinkedIn'
+              target="_blank" rel="noreferrer"
             >
               <FaLinkedin />
-            </Link>
+            </a>
           </div>
           </Grid>
       {/* <section className='social-media'>
