@@ -89,7 +89,7 @@ function Aboutme() {
     {
       label: 'Djying',
       imgPath:
-  'dj2.jpg',
+  'dj1.jpg',
     }
 
   ];
