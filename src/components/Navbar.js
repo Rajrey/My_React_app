@@ -24,7 +24,7 @@ function Navbar() {
   //   const elem1 = document.querySelector(".menu-icon");
   //   const elem2 = document.querySelector(".navbar-logo");
   //   if (
-  //     (window.scrollY < 10 && elem.style.height === "35px") ||
+  //     (window.scrollY < 10 && elem.style.height === "75px") ||
   //     window.scrollY - prevScrollY < -70
   //   ) {
   //     if(!click){
@@ -110,7 +110,7 @@ function scrollcontact() {
                   className='nav-links'
                   // onClick={closeMobileMenu}
                   onClick={() => { closeMobileMenu(); scrollcontact();}}
-                  style={{cursor:"pointer"}}>
+                  style={{cursor:"pointer",WebkitTapHighlightColor: "transparent"}}>
                   Contact
                 </div>
               </li>

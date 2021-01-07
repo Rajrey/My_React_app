@@ -3,13 +3,25 @@ import './components/Test';
 import Test from './components/Test';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import React from "react";
+import React, {useEffect} from 'react';
 import Footer from './components/Footer';
 import Aboutme from './components/Aboutme';
 import Work from './components/Work';
 import Fab from '@material-ui/core/Fab';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 function App() {
+  useEffect(() => {
+    const ele = document.getElementById("insp-logo-frame");
+    if (ele) {
+      // fade out
+      ele.classList.add("available");
+      setTimeout(() => {
+        // remove from DOM
+        ele.outerHTML = "";
+      }, 1000);
+    }
+
+  }, []);
   function scrolltop() {
     // e.preventDefault();
     // var elmnt = document.getElementById("topheader");

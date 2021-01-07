@@ -42,6 +42,11 @@ function Aboutme() {
         'paint1.jpeg',
     },
     {
+      label: 'Styling',
+      imgPath:
+    'walk1.jpg',
+    },
+    {
       label: 'Detailing',
       imgPath:
   'shades1.jpeg',
@@ -50,11 +55,6 @@ function Aboutme() {
       label: 'Dance',
       imgPath:
     'kmitra1.jpg',
-    },
-    {
-      label: 'Posing',
-      imgPath:
-    'walk1.jpg',
     },
     {
       label: 'Photography',
@@ -72,12 +72,12 @@ function Aboutme() {
         'goa1.jpg',
     },
     {
-      label: 'Crafting',
+      label: 'Hand crafting',
       imgPath:
     'black1.jpg',
     },
     {
-      label: 'Handcrafting',
+      label: 'Crafting',
       imgPath:
     'plant1.jpeg',
     },
@@ -1227,9 +1227,10 @@ function Aboutme() {
 
  
 <Typography variant="h4" style={{textAlign:"left",color:"#ffff"}}>
-      <span style={{borderBottom:"3px solid #7dc5ff"}}>- My abilities -</span>
+      <span style={{borderBottom:"3px solid #7dc5ff"}}>- My Skills -</span>
           </Typography>
           <p>
+- Creativity <br />
 - Sketching/Painting/Illustration/Artist <br />
 - Dancing <br />
 - Passion for music-It transformed me into a Disc Jockey<br />
@@ -1254,6 +1255,8 @@ function Aboutme() {
 - Cooking<br />
 - Ideating<br />
 - Right Attitude<br />
+- Flexible<br />
+- Focussed and attentive<br/>
 - Out of the box thinking<br />
           </p>
           </Fade>
@@ -1301,10 +1304,18 @@ function Aboutme() {
   </div>
     </Grid>
     </Box>
-    <Box pt={10} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
+    <Box pt={10} pl={0.6} pr={0.6} clone order={{ xs: 6, sm: 6,md:6, lg: 6}}>
     <Grid  item xs={12} sm={12} lg={12} md={12} style=
-    {{color:"#ffff"}}> 
-
+    {{color:"#ffff",textAlign:"center"}} justifycontent="center"> 
+ <Typography variant="h4" style={{textAlign:"center",color:"#ffff"}} >
+      <span style={{borderBottom:"3px solid #7dc5ff"}}>- Video -</span>
+          </Typography>
+    </Grid>
+    </Box>
+    <Box pt={10} pl={0.6} pr={0.6} clone order={{ xs: 7, sm: 7,md:7, lg: 7}}>
+    <Grid  item xs={12} sm={12} lg={12} md={12} style=
+    {{color:"#ffff",textAlign:"center",height:"500px"}}> 
+  <iframe frameBorder='0' style={{width:"100%",height:"100%"}} title='video' src="https://www.youtube.com/embed/9KGMl4Y3cl0" allowFullScreen></iframe>
     </Grid>
     </Box>
     </Grid>

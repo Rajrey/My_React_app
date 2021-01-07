@@ -6,30 +6,36 @@ import {EffectComposer} from 'three/examples/jsm/postprocessing/EffectComposer';
 import {RenderPass} from 'three/examples/jsm/postprocessing/RenderPass';
 import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 import { RoughnessMipmapper } from 'three/examples/jsm/utils/RoughnessMipmapper';
+// import CircularProgress from '@material-ui/core/CircularProgress';
 class Canvasrobo extends React.Component {
     
     constructor(props) {
         super(props)
         this.canvasRef = React.createRef();
-
+        // this.state = { loading: true }
       }
- 
+
     componentDidMount() {
     
         var scene, camera, renderer,myCanvas = document.getElementById('myCanvas');
         scene = new THREE.Scene();
         var container = document.getElementById( "grid2" );
-       
+        // var context = canvas.getContext( 'webgl2', { alpha: false } );
         // scene.fillStyle = "blue";
         // camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 10000);
-        camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 1000);
-        camera.position.set(2, 0.9, 3);
+        camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 1000,false);
+        // camera.position.set(2, 0.9, 3);
+        camera.position.set(2, 1.3, 3);
         
-        renderer = new THREE.WebGLRenderer({ canvas: myCanvas, antialias: true , preserveDrawingBuffer: true,
-            alpha:true,devicePixelRatio: 1 });
+        renderer = new THREE.WebGLRenderer({ canvas: myCanvas, antialias: true , preserveDrawingBuffer: false,
+            alpha:false,
+            // devicePixelRatio: 1, 
+        // powerPreference:"high-performance"
+        });
             // console.log(myCanvas.devicePixelRatio);
             // console.log(window.devicePixelRatio);
-        renderer.setPixelRatio(1);
+        // renderer.setPixelRatio(1);
+        renderer.setPixelRatio(window.devicePixelRatio);
         // renderer.setSize( 400, 400 );
         renderer.setClearColor(0x000000, 0);
         renderer.autoClear = false;
@@ -46,8 +52,9 @@ function onWindowResize(){
         camera.aspect = container.clientWidth/container.clientHeight;
 camera.updateProjectionMatrix();
 
-renderer.setSize(container.clientWidth,container.clientHeight);
-renderer.setPixelRatio(1);
+renderer.setSize(container.clientWidth,container.clientHeight,false);
+// renderer.setPixelRatio(1);
+renderer.setPixelRatio(window.devicePixelRatio);
 // document.body.appendChild( container );
 container.appendChild( renderer.domElement ); 
 // render();
@@ -92,7 +99,7 @@ container.appendChild( renderer.domElement );
         var light = new THREE.DirectionalLight(0xFFFFFF, 5);
         light.position.setScalar(100);
     scene.add(light);
-    scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+    // scene.add(new THREE.AmbientLight(0xffffff, 0.25));
     // let light1 = new THREE.PointLight(0xffffff,1);
     //         light1.position.set(0,300,500);
     //         scene.add(light1);
@@ -129,6 +136,11 @@ container.appendChild( renderer.domElement );
             theResult.material.emissive = new THREE.Color( 0x1089F6 );
             theResult.layers.enable(1);
     // scene.add(theResult);
+//     effectFXAA = new THREE.ShaderPass( THREE.ShaderExtras[ "fxaa" ] );
+
+// effectFXAA.uniforms[ 'resolution' ].value.set( 1 / container.clientWidth, 1 / container.clientHeight );
+// effectFXAA.renderToScreen = true;
+
     let renderScene = new RenderPass( scene, camera )
 let bloomPass = new UnrealBloomPass( theResult, 1.5, 0.4, 0.85 )
 bloomPass.threshold = 0.11
@@ -138,7 +150,7 @@ bloomPass.renderToScreen = true
 	
 composer = new EffectComposer( renderer )
 let container = document.getElementById( "grid2" );
-composer.setSize( container.clientWidth,container.clientHeight,false )
+composer.setSize( container.clientWidth,container.clientHeight )
 	
 composer.addPass( renderScene )
 // composer.addPass( effectFXAA )
@@ -159,6 +171,7 @@ composer.addPass( bloomPass )
     
     roughnessMipmapper.dispose();
     render();
+    // .then(() => this.setState({ loading: false }));
     
         },
         // called while loading is progressing
@@ -214,6 +227,7 @@ composer.addPass( bloomPass )
    
     // canvas.fillStyle = 'black'
       }
+   
     //   componentDidUpdate() {
     //     console.log("robo update")
     //     this.canvasRef.removeChild(this.renderer.domElement);
@@ -234,7 +248,12 @@ elem.parentNode.removeChild(elem);
         window.removeEventListener( 'wheel', this.onWindowResize, false );
         // window.removeEventListener( 'resize', this.onWindowResize, false );
       }
+   
       render() {
+//    const {loading } = this.state;
+//    if (loading) {
+//     return  <CircularProgress color="secondary"/>
+// }
         return (
 <div style={{overflow:"hidden"}}>
 

@@ -257,7 +257,7 @@ Thanks for stopping by!!
   </Grid>
 
 </Box>
-<Box clone order={{ xs: 1, sm: 1,md:2, lg: 2}}>
+<Box clone pt={1} order={{ xs: 1, sm: 1,md:2, lg: 2}}>
 <Grid item xs={12} sm={12} lg={5} md={5} id="grid2" style={{height:"700px"}}>
  <Canvasrobo/>
   </Grid>

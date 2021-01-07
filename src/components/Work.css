@@ -1984,3 +1984,10 @@
 }
 
 
+@media screen and (max-width: 960px) {
+  #merobosvg{
+    padding:0 !important;
+  }
+}
+
+

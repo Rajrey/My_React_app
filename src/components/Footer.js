@@ -39,6 +39,9 @@ function Footer() {
             </Link>
         </Grid>
         </Grid>
+        <a href='mailto: rajreyansh1996@gmail.com'
+              aria-label='gmail'
+              target="_blank" rel="noreferrer" style={{color:"#ffff",marginTop:"20px"}}>Email - rajreyansh1996@gmail.com</a>
         <Grid container spacing={2} alignItems="center" justify="center" style={{textAlign:"center",marginTop:"30px"}}>
         <div className='social-icons'>
             <a
