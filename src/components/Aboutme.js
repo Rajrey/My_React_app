@@ -57,7 +57,7 @@ function Aboutme() {
     'kmitra1.jpg',
     },
     {
-      label: 'Photography',
+      label: 'Conceptual',
       imgPath:
     'train1.jpg',
     },
@@ -1251,11 +1251,12 @@ function Aboutme() {
 - Writing<br />
 - Managerial abilities<br /> 
 - Multitasking<br />
-- Photography<br />
 - Cooking<br />
+- Time Management<br />
 - Ideating<br />
 - Right Attitude<br />
 - Flexible<br />
+- Commitment/Dedication<br/>
 - Focussed and attentive<br/>
 - Out of the box thinking<br />
           </p>

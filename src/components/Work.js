@@ -1,13 +1,26 @@
-import React from 'react'
+import React, {useEffect}  from 'react';
 import Grid from '@material-ui/core/Grid';
 import Box from "@material-ui/core/Box";
 import { Container } from "@material-ui/core";
 import './Work.css';
-// import Fade from 'react-reveal/Fade';
+import Button from '@material-ui/core/Button';
+import Fade from 'react-reveal/Fade';
 // import Zoom from 'react-reveal/Zoom';
 import Typography from '@material-ui/core/Typography';
-const Work = () => {
-    
+function Work() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+  }, []);
+  function ovalscroll1() {
+    // e.preventDefault();
+    window.scrollBy({
+      top: 100,
+      behavior: 'smooth'
+    });
+  }
     return (
 <Container style={{width:"100%",padding:"0",height:"100%"}}>
 
@@ -16,6 +29,9 @@ const Work = () => {
 
 <Box pt={10} pr={4} pl={4} clone order={{ xs: 2, sm: 2 ,md:1, lg:1}} style={{color:"#ffff"}}>
 <Grid item xs={12} sm={12} lg={6} md={6} style={{height:"500px"}} >
+  <Fade left>
+
+ 
 <b><span  style={{fontFamily: 'Goldman',fontSize:"25px",borderBottom:"3px solid #7dc5ff"}}>GEAR UP FOR SOME PROFESSIONAL TALK</span></b><br />
 <Typography  variant="h6" component="h6"  style={{color: "#ffff",marginTop:"12px"}}>
   {/* <Zoom right cascade> */}
@@ -30,6 +46,8 @@ const Work = () => {
    My long run goal is to contribute to the products that solve real world problems, and I endeavor to become a part of the transition.
    </mark>
   </p>
+  <Button variant="outlined" onClick={ovalscroll1} color="secondary" style={{color:"#ffff",marginTop:"10px",zIndex:"3"}}>View Work History</Button> 
+  </Fade>  
   </Grid>
 
 </Box>
@@ -256,8 +274,35 @@ const Work = () => {
 
 <Grid container style={{overflow:"hidden !important"}}>
 <Box pt={10} pl={4} pr={4} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
-<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'left',overflowX:"hidden !important"}}>
+<Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'left'}}>
+<Typography  variant="h4" component="h4"  style={{textAlign: 'center'}}>
+  {/* <Zoom right cascade> */}
+    <span style={{borderBottom:"3px solid #7dc5ff"}}>- Work -</span>
 
+  {/* </Zoom> */}
+      </Typography>
+      <p>
+      I'm an individual with a passion for technology, innovation, creativity, and life. I perceive that the most alluring things are always in details.
+     
+      </p>
+       <p>
+         <mark>
+         I take a 
+genuinely interdisciplinary way to deal with life. Interconnected by one theme. The mankind has an ability to adapt, evolve & possess numerous set of skills.
+My main rationale is to excel in my each known 
+skill and have a vast knowledge on different aspects of life and have a flavour of those diverse range of skills with added experiences.
+         </mark>
+      
+        </p>
+        <p>
+          I have evolved in each phase of my life to get to where I am today. 
+   </p>
+   <p>
+   I've worked in this Industry and acquired a lot of insights and experience in the business world.
+   </p>
+   <p>
+   Me being a part of any engagement , I ensure to develop digital products of high aesthetic and technical quality with a thoughtful approach by using a wide range of methods to make ideas, design, innovation, implementation come to life with extended support and empathy towards the end-users.
+   </p>
 </Grid>
     
 </Box>

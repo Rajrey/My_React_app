@@ -12,13 +12,16 @@ import { MdKeyboardArrowUp } from 'react-icons/md';
 function App() {
   useEffect(() => {
     const ele = document.getElementById("insp-logo-frame");
+    // const ele1 = document.getElementById("topheader");
+    // console.log("=======")
+    // console.log(ele1)
     if (ele) {
       // fade out
       ele.classList.add("available");
-      setTimeout(() => {
+      // setTimeout(() => {
         // remove from DOM
         ele.outerHTML = "";
-      }, 1000);
+      // }, 500);
     }
 
   }, []);
