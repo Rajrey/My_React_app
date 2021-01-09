@@ -81,19 +81,19 @@ display: none;
 #scrollarrow{
     margin-top: -500px;
 }
-#light{
+ #light{
   top: 70px;
 }
 #lineh6{
   top: 30px !important;
 }
 
-#lineh7{
+/* #lineh7{
   top: 40px !important;
 }
 #lineh8{
   top: 50px !important;
-}
+}  */
 #lineh9{
   top: 70px !important;
 }

@@ -24,17 +24,17 @@ function Footer() {
 
      <Grid container spacing={3} alignItems="center" justify="center" style={{textAlign:"center",marginTop:"10px"}}>
         <Grid item xs={12} sm={12} lg={4} md={4}>
-        <Link to='/' style={{color:"#fff"}}>
+        <Link to='/' style={{color:"#fff",textDecoration:"none"}}>
               Home
             </Link>
         </Grid>
         <Grid item xs={12} sm={12} lg={4} md={4}>
-        <Link to='/aboutme' style={{color:"#fff"}}>
+        <Link to='/aboutme' style={{color:"#fff",textDecoration:"none"}}>
               Virtual/About me
             </Link>
         </Grid>
         <Grid item xs={12} sm={12} lg={4} md={4}>
-        <Link to='work' style={{color:"#fff"}}>
+        <Link to='work' style={{color:"#fff",textDecoration:"none"}}>
               Work
             </Link>
         </Grid>

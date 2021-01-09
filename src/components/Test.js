@@ -226,7 +226,7 @@ class Test extends React.Component {
 		<div id="lineh12"></div>
 	</div>
   <Typography variant="h2" component="h2"   style={{color: "#ffff"}}>
-  <Box pt={15} pl={9} pb={10} id="contentwelcome">
+  <Box pt={15} pl={5} pb={10} id="contentwelcome">
 
 
   <Typography  variant="h6" component="h6"  style={{color: "#ffff"}}>
@@ -567,7 +567,7 @@ And often called civilized people have increasingly become insane, driven & self
 My mission is to be part of the transition and witness the impact through a cause that is only through everyone's participation and a whole new perception of leading life in a better way.
 </p>
 <p>
-A place that has no barriers, no race or color. A safe environment that celebrates through experiences and aspirations.
+A place that has no barriers, no race or color and a helping hand for each other to improve with their flaws without any reluctancy. A safe environment that celebrates through experiences and aspirations.
 There is a need to create deeper & closer human connections.</p>
 <p>
 We should be able to use technologies for the betterment of so-called "users".

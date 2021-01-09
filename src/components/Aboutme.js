@@ -247,7 +247,7 @@ function Aboutme() {
     
     
     <Grid container style={{overflow:"hidden !important"}}>
-    <Box pt={10} pl={4} pr={4} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
+    <Box pt={12} pl={4} pr={4} clone order={{ xs: 1, sm: 1,md:1, lg: 1}}>
     <Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'left',overflowX:"hidden !important"}}>
     <Typography variant="h4" gutterBottom id="gridstory" style={{textAlign:"center"}}>
       <span style={{borderBottom:"3px solid #7dc5ff"}}>- A glimpse into my life -</span>
@@ -1220,7 +1220,7 @@ function Aboutme() {
       </Box>
 
 
-      <Box pt={16} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
+      <Box pt={13} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
     <Grid  item xs={12} sm={12} lg={8} md={8} style=
     {{color:"#ffff"}} id="abilities"> 
     <Fade left>
