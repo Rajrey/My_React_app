@@ -246,9 +246,7 @@ Thanks for stopping by!!
     My Identity - <span id="message" ></span><span className="cursor1"></span>
 
       </Typography>
-      
-
- 
+   
 
       </Box>
      
@@ -258,7 +256,7 @@ Thanks for stopping by!!
 
 </Box>
 <Box clone pt={1} order={{ xs: 1, sm: 1,md:2, lg: 2}}>
-<Grid item xs={12} sm={12} lg={5} md={5} id="grid2" style={{height:"700px"}}>
+<Grid item xs={12} sm={12} lg={5} md={5} id="grid2" style={{height:"700px",textAlign:"center"}}>
  <Canvasrobo/>
   </Grid>
     

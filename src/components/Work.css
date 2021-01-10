@@ -1342,9 +1342,9 @@
 }
 
 .robomeet-16 {
-  -webkit-animation: animate-svg-stroke-16 2s linear 1.7999999999999998s both,
+  -webkit-animation: animate-svg-stroke-16 1s linear 1.7999999999999998s both,
                        animate-svg-fill-16 0.7s cubic-bezier(0.755, 0.05, 0.855, 0.06) 1.8s both;
-          animation: animate-svg-stroke-16 2s linear 1.7999999999999998s both,
+          animation: animate-svg-stroke-16 1s linear 1.7999999999999998s both,
                animate-svg-fill-16 0.7s cubic-bezier(0.755, 0.05, 0.855, 0.06) 1.8s both;
 }
 

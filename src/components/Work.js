@@ -331,7 +331,7 @@ Even tempered
         </p>
         <mark style={{fontSize:"large"}}>Focus</mark>
         <p>
-I like to remain fully engaged in what I do and will not let my personal issues affect the work
+I like to remain fully engaged  with what I do and won't let my private matters influence the work .
         </p>
         <mark style={{fontSize:"large"}}>
           Deliverable Quality
@@ -345,30 +345,30 @@ with the acceptance of the feedback, learning from the past.
           Ability to prioritize
           </mark>
           <p>
-          Ability to equally divide time on multiple tasks, knowing which carries the highest value
-and check them out from my list in a linear or parallel order to reach the dead-line whithin the given period of time.
+          Ability to equally divide time for multiple tasks, knowing which carries the highest value
+and check them out from my list in a linear or parallel order to reach the deadline within the given period of time.
           </p>
           <mark style={{fontSize:"large"}}>
           Creative
           </mark>
           <p>
-          I like being creative and unique, and I do whatever it takes not to get influenced with great ideas around the globe in order to keep 
+          I like being creative and unique, and I do whatever it takes not to get influenced by great ideas around the globe in order to keep 
 my vision clear with no collisions.
           </p>
           <mark style={{fontSize:"large"}}>
 Effective Communication
           </mark>
           <p> 
-          Asking questions, focused listening, addressing the client needs, higher level correspondence, developing trust and rapport, 
-empathy towards end-users, exchanging thoughts and ideas and to be precise as well as detail oriented when needed.
+          Asking questions, focused listening, addressing the client needs, higher-level correspondence, developing trust and rapport, 
+empathy towards end-users, exchanging thoughts and ideas, and to be precise as well as detail-oriented when needed.
           </p>
           <mark style={{fontSize:"large"}}>Learning</mark>
           <p>
 Learning is a belief-system where a student is taught to feed on information and use it in the right way to solve a problem
-using all the experience gained in any subject which is a contionous cycle without an end. <br />
+using all the experience gained in any subject which is a continuous cycle without an end. <br />
       </p>
       <p>
-      Learning new things has always created an excitement in me, and the ability to learn, absorb, mould ourselves 
+      Learning new things has always created excitement in me, and the ability to learn, absorb, mould ourselves 
 to the business needs played a major role for my flexible, committed and focused nature towards my profession.
       </p>
       <mark style={{fontSize:"large"}}>
@@ -382,13 +382,13 @@ and handle each and every task with less stress by utilizing the time, prioritiz
           Commitment
           </mark>
           <p> 
-          Commitment towards profession which is a pre-defined me when it comes to work
+          Commitment towards profession which is a pre-characterized me with regards to work. 
           </p>
           <mark style={{fontSize:"large"}}>
           Responsibility
           </mark>
           <p> 
-          Matured behaviour in handling responsibilities
+          Matured behavior in handling responsibilities
           </p>
           <mark style={{fontSize:"large"}}>
           Contribution
@@ -400,7 +400,7 @@ and handle each and every task with less stress by utilizing the time, prioritiz
           Efficiency
           </mark>
           <p> 
-          Efficient enough to learn, grab oppurtunities. Efficient enough to do things faster within less time
+          Efficient enough to learn, grab opportunities. Efficient enough to do things faster within less time
           </p>
           </Zoom>
 </Grid>
@@ -476,7 +476,7 @@ and handle each and every task with less stress by utilizing the time, prioritiz
       Frontend Development- Liase between frontend and backend, business teams. Expertise in using top notch libraries and frameworks to develop software applications. 
         </p>
         <p>
-        Self management during independent and0 transitional projects(Successfull working in both team & self directed projects).
+        Self management during independent and transitional projects(Successfull working in both team & self directed projects).
         </p>
         <p>
           Knowledge on full-stack development and implementation of the entire end-to-end application. 
@@ -525,7 +525,7 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
 <Grid  item xs={12} sm={12} lg={6} md={6} > 
 <Typography  variant="h5" component="h5" gutterBottom>
   {/* <Zoom right cascade> */}
-    <span style={{borderBottom:"3px solid #7dc5ff"}}>- Equipped with diverse and promising technical skill set -</span>
+    <span style={{borderBottom:"3px solid #7dc5ff"}}>Equipped with diverse and promising technical skill set</span>
 
   {/* </Zoom> */}
       </Typography>
@@ -574,16 +574,36 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
       - Inkscape for 2D Vector Illustrations<br/>
       - Blender for 3D(Beginner)<br/>
       - Vectary for 3D(Beginner)<br/>
-      - Flare animation tool for Flutter<br/>
+      - Rive animation tool for Flutter<br/>
       - Formstack<br/>
       - Salesforce<br/>
       - Zoho CRM<br/>
+      - Github for Version control<br />
+      - Google Analytics<br />
+      - Postman(API Development)<br />
+      - Fl Studio(Music Production)<br />
+      - Recordboxdj for Djying<br />
+      - Trello for issues<br />
+      - Jira for project lifecycle management<br />
       - Applied Epic- Insurance agency management system<br/>
       - Gridbox for Bootstrap<br/>
       - All the animation related tools in public domain<br/>
       - SSP Pure<br/>
-      - CPAS(Conduent pensions administrative system)<br/>
+      - CPAS(Conduent Pensions Administration System)<br/>
       - BIC Portal(Brac Informatics Centre)
+      
+        </p>
+        </Grid>
+        <Grid item xs={12} sm={12} lg={4} md={4}>
+        <mark style={{fontSize:"large"}}>Deployment/Hosting</mark>
+      <p>
+      - Hostgator for websites<br/>
+      - IIS Server for web applications<br/>
+      - NGINX for web applications<br/>
+      - Netlify for websites<br/>
+      - Heroku for websites and web applications<br/>
+      - Github hosting<br/>
+      - Firebase hosting
       
         </p>
         </Grid>
@@ -1260,7 +1280,7 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
  
 
 
-  <Box pt={16} pl={4} pr={4} clone order={{ xs: 4, sm: 4,md:4, lg: 4}}>
+  <Box pt={16} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:4, lg: 4}}>
 <Grid  item xs={12} sm={12} lg={6} md={6} style=
 {{color:"#ffff"}} > 
 <Fade left>
@@ -1450,7 +1470,7 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
 </Fade>
 </Grid>
 </Box>
-<Box pt={17} pl={4} pr={4} clone order={{ xs: 5, sm: 5,md:5, lg: 5}}>
+<Box pt={17} pl={4} pr={4} clone order={{ xs: 4, sm: 4,md:5, lg: 5}}>
 <Grid  item xs={12} sm={12} lg={6} md={6} style=
 {{color:"#ffff"}} > 
 
@@ -1462,13 +1482,16 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
   {/* </Zoom> */}
       </Typography>
       <Fade right>
-
+<p>
+"Every day is a chance of improvement just like an incremented loop which iterates and increments with adding value and information."
+</p>
+<p>
+  
+I'm a big picture thinker, and I'd like to connect dots and find ways to solve complicated problems. 
+Much the same as how a model finds its way to a potential outcome by iterating through numerous possibilities.
+</p>
       <p>
-      "Every day is a chance of improvement just like an incremented loop which iterates & increments with adding value & information."
-I'm a big picture thinker & I'd like to connect dots & find solutions to solve complex problems.
-Much the same as how a model finds its way to the possible outcome by iterating through numerous possibilities.
-Experience will make me learn from my past mistakes.
-My experience has taught me that there is a great wealth of information out there & it just takes dedication, hard work & passion to absorb,
+Experience will make me learn from my past mistakes. My experience has taught me that there is abundance of information out there and it just takes dedication, hard work and passion to absorb,
 get acquainted and add more to the thinking.
 
       </p>

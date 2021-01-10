@@ -20,6 +20,16 @@ class Canvasrobo extends React.Component {
         var scene, camera, renderer,myCanvas = document.getElementById('myCanvas');
         scene = new THREE.Scene();
         var container = document.getElementById( "grid2" );
+        // const loadingManager = new THREE.LoadingManager( () => {
+	
+        //     const loadingScreen = document.getElementById( 'preloader' );
+        //     loadingScreen.classList.add( 'fade-out' );
+            
+        //     // optional: remove loader from DOM via event listener
+        //     loadingScreen.addEventListener( 'transitionend', onTransitionEnd );
+            
+        // } );
+        // const loader = new THREE.ColladaLoader( loadingManager );
         // var context = canvas.getContext( 'webgl2', { alpha: false } );
         // scene.fillStyle = "blue";
         // camera = new THREE.PerspectiveCamera( 50, container.clientWidth/container.clientHeight,1, 10000);
@@ -99,7 +109,7 @@ container.appendChild( renderer.domElement );
         var light = new THREE.DirectionalLight(0xFFFFFF, 5);
         light.position.setScalar(100);
     scene.add(light);
-    // scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+    scene.add(new THREE.AmbientLight(0xffffff, 0.25));
     // let light1 = new THREE.PointLight(0xffffff,1);
     //         light1.position.set(0,300,500);
     //         scene.add(light1);
@@ -176,6 +186,10 @@ composer.addPass( bloomPass )
         },
         // called while loading is progressing
     function ( xhr ) {
+        const loadingScreen = document.getElementById( 'preloader' );
+        if(loadingScreen != null){
+            loadingScreen.outerHTML = "";
+        }
     
     // console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
     
@@ -224,7 +238,12 @@ composer.addPass( bloomPass )
     // }
   
     }
-   
+    // function onTransitionEnd( event ) {
+
+    //     const element = event.target;
+    //     element.remove();
+        
+    // }
     // canvas.fillStyle = 'black'
       }
    
@@ -256,8 +275,12 @@ elem.parentNode.removeChild(elem);
 // }
         return (
 <div style={{overflow:"hidden"}}>
-
-  <canvas id="myCanvas" ref={this.canvasRef} ></canvas>
+<div id="preloader" >
+  <div id="loader" style={{textAlign:"center"}}></div>
+</div>
+  <canvas id="myCanvas" ref={this.canvasRef} >
+ 
+  </canvas>
 
          </div>
         

@@ -1313,7 +1313,7 @@ function Aboutme() {
           </Typography>
     </Grid>
     </Box>
-    <Box pt={10} pl={0.6} pr={0.6} clone order={{ xs: 7, sm: 7,md:7, lg: 7}}>
+    <Box pt={10} pl={2} pr={2} clone order={{ xs: 7, sm: 7,md:7, lg: 7}}>
     <Grid  item xs={12} sm={12} lg={12} md={12} style=
     {{color:"#ffff",textAlign:"center",height:"500px"}}> 
   <iframe frameBorder='0' style={{width:"100%",height:"100%"}} title='video' src="https://www.youtube.com/embed/9KGMl4Y3cl0" allowFullScreen></iframe>
