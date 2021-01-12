@@ -315,7 +315,7 @@ skill and have a vast knowledge on different aspects of life and have a flavour 
 <Grid  item xs={12} sm={12} lg={12} md={12} style={{color: "#ffff", textAlign: 'left'}}>
 <Typography  variant="h4" component="h4" style={{textAlign: 'center'}}>
   {/* <Zoom right cascade> */}
-    <span style={{borderBottom:"3px solid #7dc5ff"}}>- Parameter Assessment -</span>
+    <span style={{borderBottom:"3px solid #7dc5ff"}}>Parameter Assessment</span>
 
   {/* </Zoom> */}
       </Typography>
@@ -388,19 +388,19 @@ and handle each and every task with less stress by utilizing the time, prioritiz
           Responsibility
           </mark>
           <p> 
-          Matured behavior in handling responsibilities
+          Matured behavior in handling responsibilities.
           </p>
           <mark style={{fontSize:"large"}}>
           Contribution
           </mark>
           <p> 
-          Willing to do whatever it takes to help for any project need
+          Willing to do whatever it takes to help for any project need.
           </p>
           <mark style={{fontSize:"large"}}>
           Efficiency
           </mark>
           <p> 
-          Efficient enough to learn, grab opportunities. Efficient enough to do things faster within less time
+          Efficient enough to learn, grab opportunities. Efficient enough to do things faster within less time.
           </p>
           </Zoom>
 </Grid>
@@ -473,7 +473,7 @@ and handle each and every task with less stress by utilizing the time, prioritiz
 				<h2>Frontend Developer,Business Analyst</h2>
 				<small>2019</small>
 				<p>
-      Frontend Development- Liase between frontend and backend, business teams. Expertise in using top notch libraries and frameworks to develop software applications. 
+      Frontend Development- Liaise between frontend and backend, business teams. Expertise in using top notch libraries and frameworks to develop software applications. 
         </p>
         <p>
         Self management during independent and transitional projects(Successfull working in both team & self directed projects).
@@ -569,7 +569,7 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
         </p>
         </Grid>
         <Grid item xs={12} sm={12} lg={8} md={8}>
-        <mark style={{fontSize:"large"}}>Tools,Systems</mark>
+        <mark style={{fontSize:"large"}}>Tools,Systems,Platformss</mark>
       <p>
       - Inkscape for 2D Vector Illustrations<br/>
       - Blender for 3D(Beginner)<br/>
@@ -587,10 +587,12 @@ Thorough testing of the software, simultaneous bug fixes. Proficient in various 
       - Jira for project lifecycle management<br />
       - Applied Epic- Insurance agency management system<br/>
       - Gridbox for Bootstrap<br/>
-      - All the animation related tools in public domain<br/>
+      - Various animation related tools in public domain<br/>
       - SSP Pure<br/>
       - CPAS(Conduent Pensions Administration System)<br/>
-      - BIC Portal(Brac Informatics Centre)
+      - BIC Portal(Brac Informatics Centre)<br />
+      - Mysql<br />
+      - Firebase
       
         </p>
         </Grid>

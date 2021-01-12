@@ -1236,7 +1236,7 @@ function Aboutme() {
 - Passion for music-It transformed me into a Disc Jockey<br />
 - Beginner in music production (Music maker)<br /> 
 - Handcrafts/Art<br />
-- Understanding human physc/Interest in pyschology<br /> 
+- Understanding human psych/Interest in psychology<br /> 
 - Frontend Development/UI-UX Designer<br />
 - UI/Websites Development<br />
 - Web/PWA Development<br />
