@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!-- <meta
+  name="viewport"
+  content="minimum-scale=1.0, initial-scale=1.0, width=device-width,user-scalable=no,shrink-to-fit=no"
+/> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" /> -->
+    <meta name="theme-color" content="#060f29" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap" rel="stylesheet"> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Prizmabrixx</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Karla:wght@200;300;400;600;700;800&display=swap');
+
+/* html, body { */
+  /* scroll-behavior: smooth; */
+  /* scroll-behavior: auto; */
+    /* height: 100vh; */
+    /* background-color: #000000; */
+ /* } */
+
+ body{
+
+/* overflow-x: hidden !important; */
+-webkit-font-smoothing: antialiased;
+/* touch-action: none; */
+position: relative;
+}
+html, body {
+margin: 0 !important;
+
+background-color: #060f29;
+min-height: 100vh;   
+min-width: 100vw;
+overflow-x: hidden;
+overflow-y: visible;
+  /* scroll-behavior: smooth; */
+}
+
+
+/* html, body.app {
+position: relative;
+height: 100vh;   
+} */
+
+
+
+/* .insp-logo-frame-img {
+        max-width: 25em;
+        border-radius: 3px;
+        fill: none;
+        stroke: #222;
+        stroke-linecap: round;
+        stroke-width: 8%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      main {
+	 width: 100vw;
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 background: #090707;
+} */
+ .dank-ass-loader {
+    -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 40%;
+        left: 40%;
+	 -ms-transform: rotate(29deg);
+	/* IE 9 */
+	 transform: rotate(29deg);
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+}
+ .dank-ass-loader .row {
+	 display: flex;
+}
+ .arrow {
+	 width: 0;
+	 height: 0;
+	 margin: 0 -6px;
+	 border-left: 12px solid transparent;
+	 border-right: 12px solid transparent;
+	 border-bottom: 21.6px solid #fd7000;
+	 animation: blink 1s infinite;
+	 filter: drop-shadow(0 0 18px #fd7000);
+}
+ .arrow.down {
+	 transform: rotate(180deg);
+}
+ .arrow.outer-1 {
+	 animation-delay: -0.0555555556s;
+}
+ .arrow.outer-2 {
+	 animation-delay: -0.1111111111s;
+}
+ .arrow.outer-3 {
+	 animation-delay: -0.1666666667s;
+}
+ .arrow.outer-4 {
+	 animation-delay: -0.2222222222s;
+}
+ .arrow.outer-5 {
+	 animation-delay: -0.2777777778s;
+}
+ .arrow.outer-6 {
+	 animation-delay: -0.3333333333s;
+}
+ .arrow.outer-7 {
+	 animation-delay: -0.3888888889s;
+}
+ .arrow.outer-8 {
+	 animation-delay: -0.4444444444s;
+}
+ .arrow.outer-9 {
+	 animation-delay: -0.5s;
+}
+ .arrow.outer-10 {
+	 animation-delay: -0.5555555556s;
+}
+ .arrow.outer-11 {
+	 animation-delay: -0.6111111111s;
+}
+ .arrow.outer-12 {
+	 animation-delay: -0.6666666667s;
+}
+ .arrow.outer-13 {
+	 animation-delay: -0.7222222222s;
+}
+ .arrow.outer-14 {
+	 animation-delay: -0.7777777778s;
+}
+ .arrow.outer-15 {
+	 animation-delay: -0.8333333333s;
+}
+ .arrow.outer-16 {
+	 animation-delay: -0.8888888889s;
+}
+ .arrow.outer-17 {
+	 animation-delay: -0.9444444444s;
+}
+ .arrow.outer-18 {
+	 animation-delay: -1s;
+}
+ .arrow.inner-1 {
+	 animation-delay: -0.1666666667s;
+}
+ .arrow.inner-2 {
+	 animation-delay: -0.3333333333s;
+}
+ .arrow.inner-3 {
+	 animation-delay: -0.5s;
+}
+ .arrow.inner-4 {
+	 animation-delay: -0.6666666667s;
+}
+ .arrow.inner-5 {
+	 animation-delay: -0.8333333333s;
+}
+ .arrow.inner-6 {
+	 animation-delay: -1s;
+}
+ @keyframes blink {
+	 0% {
+		 opacity: 0.1;
+	}
+	 30% {
+		 opacity: 1;
+	}
+	 100% {
+		 opacity: 0.1;
+	}
+}
+ 
+</style>
+  </head>
+  <!-- <body class="body"> -->
+    <body>
+    <!-- <main id="main"> -->
+      <div class="cursor"></div>
+      <div class="cursor-border"></div>
+      <div class="insp-logo-frame" id="insp-logo-frame">
+        
+        <div class="dank-ass-loader">
+            <div class="row">
+               <div class="arrow up outer outer-18"></div>
+               <div class="arrow down outer outer-17"></div>
+               <div class="arrow up outer outer-16"></div>
+               <div class="arrow down outer outer-15"></div>
+               <div class="arrow up outer outer-14"></div>
+            </div>
+            <div class="row">
+               <div class="arrow up outer outer-1"></div>
+               <div class="arrow down outer outer-2"></div>
+               <div class="arrow up inner inner-6"></div>
+               <div class="arrow down inner inner-5"></div>
+               <div class="arrow up inner inner-4"></div>
+               <div class="arrow down outer outer-13"></div>
+               <div class="arrow up outer outer-12"></div>
+            </div>
+            <div class="row">
+               <div class="arrow down outer outer-3"></div>
+               <div class="arrow up outer outer-4"></div>
+               <div class="arrow down inner inner-1"></div>
+               <div class="arrow up inner inner-2"></div>
+               <div class="arrow down inner inner-3"></div>
+               <div class="arrow up outer outer-11"></div>
+               <div class="arrow down outer outer-10"></div>
+            </div>
+            <div class="row">
+               <div class="arrow down outer outer-5"></div>
+               <div class="arrow up outer outer-6"></div>
+               <div class="arrow down outer outer-7"></div>
+               <div class="arrow up outer outer-8"></div>
+               <div class="arrow down outer outer-9"></div>
+            </div>
+         </div>
+      </div>
+      <div id="root"></div>
+    <!-- </main> -->
+
+ 
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+<script>
+  var cursor = document.querySelector(".cursor");
+var cursorBorder = document.querySelector(".cursor-border");
+var getXY = function (event, element) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var rect = element.getBoundingClientRect();
+    x -= rect.width / 2;
+    y -= rect.height / 2;
+    return [x, y];
+};
+document.addEventListener("mouseenter", function (e) {
+    cursor.animate([{ opacity: 0 }, { opacity: 1 }], {
+        duration: 300,
+        fill: "forwards"
+    });
+    cursorBorder.animate([
+        {
+            opacity: 0
+        },
+        {
+            opacity: 0.8
+        }
+    ], {
+        duration: 300,
+        fill: "forwards"
+    });
+});
+document.addEventListener("mousemove", function (e) {
+    var _a = getXY(e, cursor), cursorX = _a[0], cursorY = _a[1];
+    var _b = getXY(e, cursorBorder), cursorBorderX = _b[0], cursorBorderY = _b[1];
+    var targetName = e.target.tagName;
+    if (targetName === "A" || targetName === "LABEL" || targetName === "BUTTON") {
+        cursorBorder.classList.add("on-focus");
+    }
+    else {
+        cursorBorder.classList.remove("on-focus");
+    }
+    cursor.animate([{ transform: "translate(" + cursorX + "px, " + cursorY + "px)" }, { transform: "translate(" + cursorX + "px, " + cursorY + "px)" }], {
+        duration: 300,
+        fill: "forwards",
+        delay: 50
+    });
+    cursorBorder.animate([{ transform: "translate(" + cursorBorderX + "px, " + cursorBorderY + "px)" }, { transform: "translate(" + cursorBorderX + "px, " + cursorBorderY + "px)" }], {
+        duration: cursorBorder.classList.contains("on-focus") ? 1500 : 300,
+        fill: "forwards",
+        delay: 150
+    });
+});
+document.addEventListener("mouseleave", function (e) {
+    cursor.animate([{ opacity: 0.8 }, { opacity: 0 }], {
+        duration: 500,
+        fill: "forwards"
+    });
+    cursorBorder.animate([
+        {
+            opacity: 0.8
+        },
+        {
+            opacity: 0
+        }
+    ], {
+        duration: 500,
+        fill: "forwards"
+    });
+});
+</script>
+<script>
+  function init() {
+    if (document.body) {
+        var e = document.body,
+            t = document.documentElement,
+            n = window.innerHeight,
+            o = e.scrollHeight;
+        if (root = document.compatMode.indexOf("CSS") >= 0 ? t : e, activeElement = e, initdone = !0, top != self) frame = !0;
+        else if (o > n && (e.offsetHeight <= n || t.offsetHeight <= n)) {
+            var a = !1,
+                r = function() {
+                    a || t.scrollHeight == document.height || (a = !0, setTimeout(function() {
+                        t.style.height = document.height + "px", a = !1
+                    }, 500))
+                };
+            if (t.style.height = "", setTimeout(r, 10), addEvent("DOMNodeInserted", r), addEvent("DOMNodeRemoved", r), root.offsetHeight <= n) {
+                var i = document.createElement("div");
+                i.style.clear = "both", e.appendChild(i)
+            }
+        }
+
+        fixedback || disabled || (e.style.backgroundAttachment = "scroll", t.style.backgroundAttachment = "scroll")
+    }
+}
+
+function scrollArray(e, t, n, o) {
+    if (o || (o = 1e3), directionCheck(t, n), acceleration) {
+        var a = +new Date,
+            r = a - lastScroll;
+        if (accelDelta > r) {
+            var i = (1 + 30 / r) / 2;
+            i > 1 && (i = Math.min(i, accelMax), t *= i, n *= i)
+        }
+        lastScroll = +new Date
+    }
+    if (que.push({
+            x: t,
+            y: n,
+            lastX: 0 > t ? .99 : -.99,
+            lastY: 0 > n ? .99 : -.99,
+            start: +new Date
+        }), !pending) {
+        var l = e === document.body,
+            c = function() {
+                for (var a = +new Date, r = 0, i = 0, s = 0; s < que.length; s++) {
+                    var d = que[s],
+                        u = a - d.start,
+                        m = u >= animtime,
+                        f = m ? 1 : u / animtime;
+                    pulseAlgorithm && (f = pulse(f));
+                    var h = d.x * f - d.lastX >> 0,
+                        p = d.y * f - d.lastY >> 0;
+                    r += h, i += p, d.lastX += h, d.lastY += p, m && (que.splice(s, 1), s--)
+                }
+                l ? window.scrollBy(r, i) : (r && (e.scrollLeft += r), i && (e.scrollTop += i)), t || n || (que = []), que.length ? requestFrame(c, e, o / framerate + 1) : pending = !1
+            };
+        requestFrame(c, e, 0), pending = !0
+    }
+}
+
+function wheel(e) {
+    initdone || init();
+    var t = e.target,
+        n = overflowingAncestor(t);
+    if (!n || e.defaultPrevented || isNodeName(activeElement, "embed") || isNodeName(t, "embed") && /\.pdf/i.test(t.src)) return !0;
+    var o = e.wheelDeltaX || 0,
+        a = e.wheelDeltaY || 0;
+    o || a || (a = e.wheelDelta || 0), Math.abs(o) > 1.2 && (o *= stepsize / 120), Math.abs(a) > 1.2 && (a *= stepsize / 120), scrollArray(n, -o, -a)
+}
+
+// function keydown(e) {
+//     var t = e.target,
+//         n = e.ctrlKey || e.altKey || e.metaKey || e.shiftKey && e.keyCode !== key.spacebar;
+//     if (/input|textarea|select|embed/i.test(t.nodeName) || t.isContentEditable || e.defaultPrevented || n) return !0;
+//     if (isNodeName(t, "button") && e.keyCode === key.spacebar) return !0;
+//     var o, a = 0,
+//         r = 0,
+//         i = overflowingAncestor(activeElement),
+//         l = i.clientHeight;
+//     switch (i == document.body && (l = window.innerHeight), e.keyCode) {
+//         case key.up:
+//             r = -arrowscroll;
+//             break;
+//         case key.down:
+//             r = arrowscroll;
+//             break;
+//         case key.spacebar:
+//             o = e.shiftKey ? 1 : -1, r = -o * l * .9;
+//             break;
+//         case key.pageup:
+//             r = .9 * -l;
+//             break;
+//         case key.pagedown:
+//             r = .9 * l;
+//             break;
+//         case key.home:
+//             r = -i.scrollTop;
+//             break;
+//         case key.end:
+//             var c = i.scrollHeight - i.scrollTop - l;
+//             r = c > 0 ? c + 10 : 0;
+//             break;
+//         case key.left:
+//             a = -arrowscroll;
+//             break;
+//         case key.right:
+//             a = arrowscroll;
+//             break;
+//         default:
+//             return !0
+//     }
+//     scrollArray(i, a, r)
+// }
+
+function mousedown(e) {
+    activeElement = e.target
+}
+
+function setCache(e, t) {
+    for (var n = e.length; n--;) cache[uniqueID(e[n])] = t;
+    return t
+}
+
+function overflowingAncestor(e) {
+    var t = [],
+        n = root.scrollHeight;
+    do {
+        var o = cache[uniqueID(e)];
+        if (o) return setCache(t, o);
+        if (t.push(e), n === e.scrollHeight) {
+            if (!frame || root.clientHeight + 10 < n) return setCache(t, document.body)
+        } else if (e.clientHeight + 10 < e.scrollHeight && (overflow = getComputedStyle(e, "").getPropertyValue("overflow-y"), "scroll" === overflow || "auto" === overflow)) return setCache(t, e)
+    } while (e = e.parentNode)
+}
+
+function addEvent(e, t, n) {
+    window.addEventListener(e, t, n || !1)
+}
+
+function removeEvent(e, t, n) {
+    window.removeEventListener(e, t, n || !1)
+}
+
+function isNodeName(e, t) {
+    return (e.nodeName || "").toLowerCase() === t.toLowerCase()
+}
+
+function directionCheck(e, t) {
+    e = e > 0 ? 1 : -1, t = t > 0 ? 1 : -1, (direction.x !== e || direction.y !== t) && (direction.x = e, direction.y = t, que = [], lastScroll = 0)
+}
+
+function pulse_(e) {
+    var t, n, o;
+    return e *= pulseScale, 1 > e ? t = e - (1 - Math.exp(-e)) : (n = Math.exp(-1), e -= 1, o = 1 - Math.exp(-e), t = n + o * (1 - n)), t * pulseNormalize
+}
+
+function pulse(e) {
+    return e >= 1 ? 1 : 0 >= e ? 0 : (1 == pulseNormalize && (pulseNormalize /= pulse_(1)), pulse_(e))
+}
+var framerate = 150,
+    animtime = 800,
+    stepsize = 100,
+    pulseAlgorithm = !0,
+    pulseScale = 8,
+    pulseNormalize = 1,
+    acceleration = !0,
+    accelDelta = 10,
+    accelMax = 1,
+    keyboardsupport = !0,
+    disableKeyboard = !1,
+    arrowscroll = 50,
+    exclude = "",
+    disabled = !1,
+    frame = !1,
+    direction = {
+        x: 0,
+        y: 0
+    },
+    initdone = !1,
+    fixedback = !0,
+    root = document.documentElement,
+    activeElement, key = {
+        left: 37,
+        up: 38,
+        right: 39,
+        down: 40,
+        spacebar: 32,
+        pageup: 33,
+        pagedown: 34,
+        end: 35,
+        home: 36
+    },
+    que = [],
+    pending = !1,
+    lastScroll = +new Date,
+    cache = {};
+setInterval(function() {
+    cache = {}
+}, 1e4);
+var uniqueID = function() {
+        var e = 0;
+        return function(t) {
+            return t.uniqueID || (t.uniqueID = e++)
+        }
+    }(),
+    requestFrame = function() {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || function(e, t, n) {
+            window.setTimeout(e, n || 1e3 / 60)
+        }
+    }();
+addEvent("mousedown", mousedown), addEvent("mousewheel", wheel), addEvent("load", init);
+</script>
+  </body>
+</html>

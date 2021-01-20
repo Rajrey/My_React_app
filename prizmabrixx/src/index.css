@@ -1,0 +1,42 @@
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Karla', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  body::-webkit-scrollbar {
+    width: 12px;
+    background: #202020;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #ffde7a;
+    border-radius: 5px;
+    border: 3px solid #202020;
+  }
+  @media screen and (max-width: 760px) {
+    ::-webkit-scrollbar {display:none;}
+    
+  
+  }
+*:focus {
+  outline: 0;
+  -webkit-appearance: none;
+  outline: none !important;
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+
+
+
+
